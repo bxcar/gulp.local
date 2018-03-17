@@ -1,18 +1,23 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass');
+var gulp        = require('gulp'),
+    sass        = require('gulp-sass'),
+    browserSync = require('browser-sync');
 
 gulp.task('sass', function () {
-    return gulp.src('app/sass/main.sass')
+    return gulp.src('app/sass/**/*.sass')
         .pipe(sass())
         .pipe(gulp.dest('app/css'))
-});
-/*
-gulp.task('mytask', function () {
-    console.log('Hello, I am task');
+        .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('mytask1', function () {
-    return gulp.src('sources-files')
-        .pipe(plugin())
-        .pipe(gulp.dest('folder'))
-});*/
+gulp.task('browser-sync', function () {
+    browserSync({
+        server: {
+            baseDir: 'app'
+        },
+        notify: false
+    });
+});
+
+gulp.task('watch', ['browser-sync', 'sass'], function () {
+    gulp.watch('app/sass/**/*.sass', ['sass']);
+});
