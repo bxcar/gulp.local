@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+.container {
+  width: 100%;
+
+  .inner-container {
+    max-width: 1170px;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+
+  header {
+    max-width: 1139px;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+    text-transform: uppercase;
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      height: 100px;
+
+      .logo-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 390px;
+        min-width: 390px;
+
+        .header-title {
+          font-family: 'Open Sans Extrabold', sans-serif;
+          font-size: 14px;
+          color: #344f86;
+        }
+
+        .header-title, .header-logo {
+          margin: {
+            left: 15px;
+            //right: 15px;
+          }
+        }
+      }
+
+      .header-search {
+        width: 360px;
+        min-width: 360px;
+        margin: {
+          left: 15px;
+          right: 15px;
+        }
+        display: flex;
+        flex-wrap: wrap;
+
+        .download-link {
+          display: inline-block;
+          width: 50%;
+          order: 2;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 10px;
+          margin-top: 3px;
+
+          a {
+            color: #454545;
+          }
+
+          a, img {
+            display: inline-block;
+            vertical-align: bottom;
+          }
+        }
+
+        form {
+          width: 100%;
+          order: 3;
+          position: relative;
+          margin-top: -18px;
+
+          input {
+            outline: none;
+          }
+
+          input[type="text"] {
+            height: 38px;
+            padding-left: 10px;
+            border: 1px solid #dcdcdc;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 11px;
+            text-transform: uppercase;
+            width: 315px;
+          }
+
+          input[type="image"] {
+            position: absolute;
+            left: 299px;
+            top: 12px;
+          }
+
+          ::-webkit-input-placeholder {color: #dddddd;}
+          ::-moz-placeholder          {color: #dddddd;}/* Firefox 19+ */
+          :-moz-placeholder           {color: #dddddd;}/* Firefox 18- */
+          :-ms-input-placeholder      {color: #dddddd;}
+        }
+      }
+    }
+  }
+}
