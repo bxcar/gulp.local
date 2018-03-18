@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
 
 body {
   margin: {
@@ -256,6 +257,110 @@ body {
 
           a:first-child {
             border-left: 1px solid #e4e4e4;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    .slider {
+      background: url("../img/slider-bg.png") no-repeat;
+      background-size: cover;
+
+      .slide {
+        width: 1139px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+
+        .slide-content {
+          width: 663px;
+          margin: {
+            left: auto;
+            right: auto;
+          }
+
+          .top-block {
+            background: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            height: 175px;
+            h1 {
+              margin: 0;
+              font-family: 'Bebas Neue Regular', sans-serif;
+              font-weight: bold;
+              font-size: 130px;
+              color: #dc8344;
+            }
+
+            span {
+              font-family: 'Bebas Neue Regular', sans-serif;
+              font-weight: bold;
+              font-size: 29px;
+              color: #000;
+              display: block;
+            }
+          }
+
+          .tiles-top, .tiles-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
+          .tile {
+            width: 154px;
+            height: 114px;
+            margin-top: 13px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+
+            span {
+              font-family: 'Bebas Neue Regular', sans-serif;
+              font-weight: bold;
+              font-size: 18px;
+              color: #333333;
+            }
+
+            span, div {
+              display: block;
+            }
+
+            div {
+              width: 100%;
+
+              div {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+              }
+            }
+          }
+
+          .slider-button {
+            font-family: 'Open Sans Extrabold', sans-serif;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+            background-color: #dc8344;
+            padding: 15px 0;
+            border: 2px solid #fff;
+            width: 258px;
+            text-align: center;
+            margin: {
+              left: auto;
+              right: auto;
+              top: 23px;
+              bottom: 23px;
+            }
           }
         }
       }
