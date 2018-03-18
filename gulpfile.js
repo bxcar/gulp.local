@@ -12,10 +12,10 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
-    return gulp.src('app/sass/**/*.sass')
-        .pipe(sass())
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('app/css'))
+    return gulp.src('app/sass/**/*.scss') //берем источник
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)) //преобразуем в css
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) //добавляем префиксы
+        .pipe(gulp.dest('app/css')) //выгружаем в папку css
         .pipe(browserSync.reload({stream: true}))
 });
 
@@ -65,7 +65,7 @@ gulp.task('img', function () {
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function () {
-    gulp.watch('app/sass/**/*.sass', ['sass']);
+    gulp.watch('app/sass/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
@@ -86,3 +86,5 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function () {
     var buildHtml = gulp.src('app/*.html')
         .pipe(gulp.dest('dist'));
 });
+
+gulp.task('default', ['watch']);
