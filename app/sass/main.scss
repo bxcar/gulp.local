@@ -46,18 +46,17 @@
       }
 
       .header-search {
-        width: 360px;
-        min-width: 360px;
+        width: 330px;
+        min-width: 330px;
+        display: flex;
+        flex-wrap: wrap;
         margin: {
           left: 15px;
           right: 15px;
         }
-        display: flex;
-        flex-wrap: wrap;
 
         .download-link {
           display: inline-block;
-          width: 50%;
           order: 2;
           font-family: 'Open Sans', sans-serif;
           font-weight: bold;
@@ -68,9 +67,25 @@
             color: #454545;
           }
 
+          img {
+            margin-right: 5px;
+          }
+
           a, img {
             display: inline-block;
             vertical-align: bottom;
+          }
+
+          &:nth-child(1) {
+            width: 58%;
+
+            img {
+              margin-left: 5px;
+            }
+          }
+
+          &:nth-child(2) {
+            width: 42%;
           }
         }
 
@@ -105,6 +120,88 @@
           ::-moz-placeholder          {color: #dddddd;}/* Firefox 19+ */
           :-moz-placeholder           {color: #dddddd;}/* Firefox 18- */
           :-ms-input-placeholder      {color: #dddddd;}
+        }
+      }
+
+      .social-buttons {
+        display: flex;
+        justify-content:  space-between;
+        flex-wrap: wrap;
+        width: 83px;
+        min-width: 83px;
+        margin: {
+          left: 15px;
+          right: 15px;
+        }
+
+        a {
+          width: 36px;
+          height: 36px;
+          margin: 30px auto;
+        }
+
+        a:nth-child(1) {
+          margin-left: 0;
+        }
+
+        a:nth-child(2) {
+          margin-right: 0;
+        }
+      }
+
+      .phone-email {
+        width: 180px;
+        min-width: 180px;
+        margin: {
+          left: 15px;
+          right: 15px;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .phone {
+          font-family: 'Open Sans Extrabold', sans-serif;
+          font-size: 20px;
+          color: #272727;
+        }
+
+        .email {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 10px;
+          color: #62a1da;
+          text-decoration: underline;
+        }
+
+        div {
+          width: 100%;
+          margin-top: -12px;
+        }
+      }
+
+      .header-camera {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 65px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: -8px;
+
+        span {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 10px;
+          color: #3c3c3c;
+          display: block;
+        }
+
+        div {
+          width: 100%;
+          text-align: center;
         }
       }
     }
