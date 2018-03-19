@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
+
 @font-face {
   font-family: HelveticaNeueCyr Roman;
   src: url(../fonts/helveticaneue-roman-webfont-webfont.ttf);
 }
-
 
 body {
   margin: {
     left: 0;
     right: 0;
   }
+}
+
+.hover-pink:hover {
+  background-color: #bb1241 !important;
+  color: #fff !important;
+  border-color: #bb1241 !important;
 }
 
 .container {
@@ -133,16 +139,26 @@ body {
             top: 12px;
           }
 
-          ::-webkit-input-placeholder {color: #dddddd;}
-          ::-moz-placeholder          {color: #dddddd;}/* Firefox 19+ */
-          :-moz-placeholder           {color: #dddddd;}/* Firefox 18- */
-          :-ms-input-placeholder      {color: #dddddd;}
+          ::-webkit-input-placeholder {
+            color: #dddddd;
+          }
+          ::-moz-placeholder {
+            color: #dddddd;
+          }
+          /* Firefox 19+ */
+          :-moz-placeholder {
+            color: #dddddd;
+          }
+          /* Firefox 18- */
+          :-ms-input-placeholder {
+            color: #dddddd;
+          }
         }
       }
 
       .social-buttons {
         display: flex;
-        justify-content:  space-between;
+        justify-content: space-between;
         flex-wrap: wrap;
         width: 83px;
         min-width: 83px;
@@ -403,7 +419,7 @@ body {
             text-transform: uppercase;
 
             .date-container {
-             position: absolute;
+              position: absolute;
               top: 0;
 
               .date {
@@ -489,12 +505,6 @@ body {
             text-transform: uppercase;
             text-decoration: none;
             white-space: nowrap;
-          }
-
-          .all-news-button:hover {
-            background-color: #bb1241;
-            color: #fff;
-            border-color: #bb1241;
           }
         }
 
@@ -692,12 +702,6 @@ body {
               text-decoration: none;
               white-space: nowrap;
             }
-
-            a:hover {
-              background-color: #bb1241;
-              color: #fff;
-              border-color: #bb1241;
-            }
           }
         }
       }
@@ -729,6 +733,127 @@ body {
           margin-left: 0;
         }
       }
+    }
+
+    .photo, .video {
+      h3 {
+        font-family: 'Bebas Neue Regular', sans-serif;
+        font-size: 60px;
+        color: #272727;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .tile {
+          width: 380px;
+          height: 250px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          &:nth-child(1) {
+            .tile-inner {
+              width: 225px;
+            }
+          }
+
+          &:nth-child(2) {
+            .tile-inner {
+              width: 160px;
+            }
+          }
+
+          &:nth-child(3) {
+            .tile-inner {
+              width: 193px;
+            }
+          }
+
+          .tile-inner {
+            background-color: rgba(0, 0, 0, 0.46);
+            color: #fff;
+            padding: 15px;
+
+            & > span {
+              display: block;
+              font-family: 'Bebas Neue Regular', sans-serif;
+              font-size: 24px;
+            }
+
+            .tile-desc {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding-top: 10px;
+
+              img {
+                padding-right: 10px;
+              }
+
+              span {
+                display: block;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      .more-photo, .more-video {
+        display: flex;
+        margin-bottom: 35px;
+        a {
+          display: inline-block;
+          margin-top: 30px;
+          //width: 262px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: {
+            left: 88px;
+            right: 88px;
+            top: 13px;
+            bottom: 13px;
+          }
+          border: 3px solid #ededed;
+          font-family: 'Open Sans Extrabold', sans-serif;
+          font-size: 14px;
+          color: #272727;
+          text-transform: uppercase;
+          text-decoration: none;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .photo .tile:nth-child(1) {
+      background-image: url("../img/photo-1.png");
+    }
+
+    .photo .tile:nth-child(2) {
+      background-image: url("../img/photo-2.png");
+    }
+
+    .photo .tile:nth-child(3) {
+      background-image: url("../img/photo-3.png");
+    }
+
+    .video .tile:nth-child(1) {
+      background-image: url("../img/video-1.png");
+    }
+
+    .video .tile:nth-child(2) {
+      background-image: url("../img/video-2.png");
+    }
+
+    .video .tile:nth-child(3) {
+      background-image: url("../img/video-3.png");
     }
   }
 }
