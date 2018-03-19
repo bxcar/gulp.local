@@ -41,6 +41,7 @@ body {
         right: auto;
       }
     }
+
     text-transform: uppercase;
 
     .header-top {
@@ -688,7 +689,7 @@ body {
 
             a {
               display: inline-block;
-              margin-top: 36px;
+              margin-top: 35px;
               padding: {
                 left: 33px;
                 right: 33px;
@@ -1196,6 +1197,198 @@ body {
         span, img {
           display: inline-block;
           vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+
+//vertical adaptation
+@media only screen and (max-width: 1170px) {
+  header {
+    .header-top-adapt {
+      display: flex !important;
+
+      .social-buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 83px;
+        min-width: 83px;
+        margin: {
+          left: 15px;
+          right: 15px;
+        }
+
+        a {
+          width: 36px;
+          height: 36px;
+          margin: 30px auto;
+        }
+
+        a:nth-child(1) {
+          margin-left: 0;
+        }
+
+        a:nth-child(2) {
+          margin-right: 0;
+        }
+      }
+
+      .phone-email {
+        width: 180px;
+        min-width: 180px;
+        margin: {
+          left: 15px;
+          right: 15px;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .phone {
+          font-family: 'Open Sans Extrabold', sans-serif;
+          font-size: 20px;
+          color: #272727;
+        }
+
+        .email {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 10px;
+          color: #62a1da;
+          text-decoration: underline;
+        }
+
+        div {
+          width: 100%;
+          margin-top: -12px;
+        }
+      }
+    }
+
+    .header-top {
+      .social-buttons, .phone-email {
+        display: none !important;
+      }
+    }
+
+
+    .header-top-adapt, .header-top {
+      justify-content: center !important;
+    }
+
+    .header-top-adapt {
+      margin-top: -20px;
+    }
+
+    .header-menu {
+      background: none !important;
+      margin-bottom: 57px;
+      div nav:first-child .nav-item-hide{
+        display: none;
+      }
+
+      div nav:first-child {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        /*padding-left: 10px;
+        padding-right: 10px;*/
+      }
+
+      div nav:first-child, .nav-adapt {
+        background: url(../img/menu-bg.png) no-repeat;
+      }
+
+      .nav-adapt {
+        display: flex !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+
+      div {
+        width: 100% !important;
+        min-width: 100% !important;
+
+        nav a {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .main {
+    .slider {
+      .inner-container, .slide {
+        width: 100% !important;
+      }
+    }
+
+    .about {
+      h2.not-adapt {
+        display: none;
+      }
+
+      h2.adapt {
+        display: block !important;
+      }
+
+      .wrapper-not-adapt {
+        .left-side, .right-side {
+          display: none;
+        }
+        justify-content: center !important;
+        margin-bottom: 40px;
+      }
+
+      .icons {
+        margin-top: 130px !important;
+        justify-content: center !important;
+
+        .item:first-child {
+          margin-left: 53px !important;
+        }
+
+        .item {
+          text-align: center;
+
+          img {
+            margin: {
+              left: auto;
+              right: auto;
+            }
+          }
+        }
+      }
+
+      .wrapper-adapt {
+        display: flex !important;
+        justify-content: center !important;
+
+        .left-side, .right-side {
+          margin: {
+            left: 10px;
+            right: 10px;
+          }
+        }
+      }
+    }
+
+    .testimonial {
+      .wrapper {
+        display: block !important;
+        .tile {
+          width: 65% !important;
+          margin-bottom: 40px;
+          margin-left: auto;
+          margin-right: auto;
+          border-right: none !important;
+        }
+
+        .tile:last-child {
+          margin-bottom: 0;
         }
       }
     }
