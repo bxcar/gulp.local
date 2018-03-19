@@ -581,6 +581,12 @@ body {
   white-space: nowrap;
 }
 
+.container .main .about .wrapper .left-side .all-news-button:hover {
+  background-color: #bb1241;
+  color: #fff;
+  border-color: #bb1241;
+}
+
 .container .main .about .wrapper .center {
   width: 557px;
 }
@@ -647,5 +653,131 @@ body {
 }
 
 .container .main .about .wrapper .right-side {
-  width: 262px;
+  width: 276px;
+}
+
+.container .main .about .wrapper .right-side .calendar {
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.container .main .about .wrapper .right-side .calendar .calendar-title {
+  font-family: 'Open Sans Extrabold', sans-serif;
+  font-size: 20px;
+  color: #272727;
+  text-align: center;
+}
+
+.container .main .about .wrapper .right-side .calendar table {
+  width: 100%;
+  text-align: center;
+}
+
+.container .main .about .wrapper .right-side .calendar table td,
+.container .main .about .wrapper .right-side .calendar table th {
+  line-height: 16px;
+}
+
+.container .main .about .wrapper .right-side .calendar table caption {
+  background-color: #62a1da;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.container .main .about .wrapper .right-side .calendar table tr th, .container .main .about .wrapper .right-side .calendar table tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.container .main .about .wrapper .right-side .calendar table tr th:nth-child(6),
+.container .main .about .wrapper .right-side .calendar table tr th:nth-child(7),
+.container .main .about .wrapper .right-side .calendar table tr td:nth-child(6),
+.container .main .about .wrapper .right-side .calendar table tr td:nth-child(7) {
+  color: #bb1241;
+}
+
+.container .main .about .wrapper .right-side .calendar table tr .grey {
+  color: #cccccc;
+}
+
+.container .main .about .wrapper .right-side .calendar table tr .blue {
+  color: #fff !important;
+  background-color: #62a1da;
+}
+
+.container .main .about .wrapper .right-side .inform {
+  height: 175px;
+  margin-top: 22px;
+  background-image: url("../img/all-to-skiing.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.container .main .about .wrapper .right-side .inform .date {
+  display: inline-block;
+  padding: 15px 20px;
+  font-family: 'Open Sans Extrabold', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-right: 1px solid #e4e4e4;
+}
+
+.container .main .about .wrapper .right-side .inform .date span {
+  font-family: 'Open Sans Extrabold', sans-serif;
+  font-size: 30px;
+}
+
+.container .main .about .wrapper .right-side .inform .title, .container .main .about .wrapper .right-side .inform .desc {
+  display: block;
+  padding-left: 15px;
+}
+
+.container .main .about .wrapper .right-side .inform .title {
+  font-family: 'Open Sans Extrabold', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+.container .main .about .wrapper .right-side .inform .desc {
+  font-family: 'HelveticaNeueCyr Roman', sans-serif;
+  font-size: 13px;
+  color: #fefefe;
+}
+
+.container .main .about .wrapper .right-side .inform a {
+  display: inline-block;
+  margin-top: 36px;
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 3px solid #fff;
+  font-family: 'Open Sans Extrabold', sans-serif;
+  font-size: 14px;
+  color: #272727;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.container .main .about .wrapper .right-side .inform a:hover {
+  background-color: #bb1241;
+  color: #fff;
+  border-color: #bb1241;
 }

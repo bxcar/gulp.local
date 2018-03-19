@@ -489,6 +489,12 @@ body {
             text-decoration: none;
             white-space: nowrap;
           }
+
+          .all-news-button:hover {
+            background-color: #bb1241;
+            color: #fff;
+            border-color: #bb1241;
+          }
         }
 
         .center {
@@ -553,7 +559,141 @@ body {
         }
 
         .right-side {
-          width: 262px;
+          width: 276px;
+
+          .calendar {
+            background-color: #fff;
+            padding: {
+              left: 15px;
+              right: 15px;
+              top: 10px;
+              bottom: 10px;
+            }
+            border-radius: 2px;
+            text-transform: uppercase;
+
+            .calendar-title {
+              font-family: 'Open Sans Extrabold', sans-serif;
+              font-size: 20px;
+              color: #272727;
+              text-align: center;
+            }
+
+            table {
+              width: 100%;
+              text-align: center;
+            }
+
+            table td,
+            table th {
+              //height: 20px;
+              line-height: 16px;
+            }
+
+            table caption {
+              background-color: #62a1da;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: bold;
+              font-size: 14px;
+              color: #fff;
+              width: 100%;
+              text-align: center;
+              padding: {
+                top: 8px;
+                bottom: 8px;
+              }
+            }
+
+            table tr th, table tr td {
+              font-family: 'Open Sans', sans-serif;
+              font-weight: bold;
+              font-size: 14px;
+            }
+
+            table tr th:nth-child(6),
+            table tr th:nth-child(7),
+            table tr td:nth-child(6),
+            table tr td:nth-child(7) {
+              color: #bb1241;
+            }
+
+            table tr .grey {
+              color: #cccccc;
+            }
+
+            table tr .blue {
+              color: #fff !important;
+              background-color: #62a1da;
+            }
+          }
+
+          .inform {
+            height: 175px;
+            margin-top: 22px;
+            background-image: url('../img/all-to-skiing.png');
+            background-size: cover;
+            //border-radius: 2px;
+
+            .date {
+              display: inline-block;
+              padding: 15px 20px;
+              font-family: 'Open Sans Extrabold', sans-serif;
+              font-size: 14px;
+              color: #fff;
+              text-align: center;
+              border-right: 1px solid #e4e4e4;
+            }
+
+            .date span {
+              font-family: 'Open Sans Extrabold', sans-serif;
+              font-size: 30px;
+            }
+
+            .title, .desc {
+              display: block;
+              padding: {
+                left: 15px;
+              }
+            }
+
+            .title {
+              font-family: 'Open Sans Extrabold', sans-serif;
+              font-size: 18px;
+              color: #fff;
+              padding-bottom: 8px;
+              padding-top: 20px;
+            }
+
+            .desc {
+              font-family: 'HelveticaNeueCyr Roman', sans-serif;
+              font-size: 13px;
+              color: #fefefe;
+            }
+
+            a {
+              display: inline-block;
+              margin-top: 36px;
+              padding: {
+                left: 33px;
+                right: 33px;
+                top: 18px;
+                bottom: 18px;
+              }
+              border: 3px solid #fff;
+              font-family: 'Open Sans Extrabold', sans-serif;
+              font-size: 14px;
+              color: #272727;
+              text-transform: uppercase;
+              text-decoration: none;
+              white-space: nowrap;
+            }
+
+            a:hover {
+              background-color: #bb1241;
+              color: #fff;
+              border-color: #bb1241;
+            }
+          }
         }
       }
     }
