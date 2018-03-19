@@ -11,6 +11,7 @@ body {
   margin: {
     left: 0;
     right: 0;
+    bottom: 0;
   }
 }
 
@@ -953,6 +954,218 @@ body {
             right: 80px;
             top: 15px;
             bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-top: 70px;
+    background-color: #272727;
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 32px;
+      padding-bottom: 25px;
+
+      .footer-menu-1, .footer-menu-2 {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+        a {
+          font-family: 'HelveticaNeueCyr Roman', sans-serif;
+          font-size: 13px;
+          color: #fff;
+          display: inline-block;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #62a1da;
+        }
+      }
+
+      .footer-menu-1 {
+        width: 293px;
+      }
+
+      .footer-menu-2 {
+        width: 164px;
+      }
+
+      .footer-search {
+        width: 330px;
+        min-width: 330px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: {
+          left: 15px;
+          right: 15px;
+        }
+
+        .download-link {
+          display: inline-block;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 10px;
+          text-transform: uppercase;
+          margin-top: -18px;
+
+          a {
+            color: #62a1da;
+          }
+
+          img {
+            margin-right: 5px;
+          }
+
+          a, img {
+            display: inline-block;
+            vertical-align: bottom;
+          }
+
+          &:nth-child(2) {
+            width: 58%;
+          }
+
+          &:nth-child(3) {
+            width: 42%;
+          }
+        }
+
+        form {
+          width: 100%;
+          position: relative;
+          height: 38px;
+
+          input {
+            outline: none;
+            background-color: transparent;
+          }
+
+          input[type="text"] {
+            height: 38px;
+            padding-left: 10px;
+            border: 1px solid #565656;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 11px;
+            text-transform: uppercase;
+            width: 315px;
+            color: #fff;
+          }
+
+          input[type="image"] {
+            position: absolute;
+            left: 299px;
+            top: 12px;
+          }
+
+          ::-webkit-input-placeholder {
+            color: #555555;
+          }
+          ::-moz-placeholder {
+            color: #555555;
+          }
+          /* Firefox 19+ */
+          :-moz-placeholder {
+            color: #555555;
+          }
+          /* Firefox 18- */
+          :-ms-input-placeholder {
+            color: #555555;
+          }
+        }
+      }
+
+      .footer-camera {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 65px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: -32px;
+
+        span {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 10px;
+          color: #fff;
+          text-transform: uppercase;
+          display: block;
+        }
+
+        div {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .phone-email-social-buttons {
+        margin-top: -7px;
+        .phone-email {
+          width: 180px;
+          min-width: 180px;
+          margin: {
+            left: 15px;
+            right: 15px;
+          }
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          //justify-content: center;
+
+          .phone {
+            font-family: 'Open Sans Extrabold', sans-serif;
+            font-size: 20px;
+            color: #fff;
+          }
+
+          .email {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            font-size: 10px;
+            color: #62a1da;
+            text-decoration: underline;
+            text-transform: uppercase;
+          }
+
+          div {
+            width: 100%;
+            margin-top: -12px;
+          }
+        }
+
+        .social-buttons {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width: 83px;
+          min-width: 83px;
+          margin: {
+            left: 15px;
+            right: 15px;
+          }
+
+          a {
+            width: 36px;
+            height: 36px;
+            margin: 30px auto;
+            margin-top: 25px;
+          }
+
+          a:nth-child(1) {
+            margin-left: 0;
+          }
+
+          a:nth-child(2) {
+            margin-right: 0;
           }
         }
       }
