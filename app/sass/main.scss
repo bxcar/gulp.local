@@ -490,6 +490,71 @@ body {
             white-space: nowrap;
           }
         }
+
+        .center {
+          width: 557px;
+
+          .map {
+            background: url('../img/event-map-bg.png') no-repeat;
+            background-size: cover;
+            height: 87px;
+            display: flex;
+            align-items: center;
+            padding-left: 28px;
+            border-radius: 2px;
+
+            span {
+              font-family: 'Bebas Neue Regular', sans-serif;
+              font-size: 45px;
+              color: #fff;
+              margin-left: 11px;
+            }
+
+            img, span {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+
+          .desc {
+            background-color: #fff;
+            border-radius: 2px;
+            margin-top: 36px;
+
+            img, h3 {
+              display: inline-block;
+              vertical-align: middle;
+            }
+
+            padding: {
+              top: 31px;
+              bottom: 31px;
+              left: 31px;
+              right: 44px;
+            }
+
+            h3 {
+              font-family: 'Bebas Neue Regular', sans-serif;
+              font-size: 36px;
+              color: #404040;
+              margin: {
+                top: 0;
+                bottom: 0;
+              }
+              margin-left: 8px;
+            }
+
+            .text {
+              font-family: 'Open Sans', sans-serif;
+              font-size: 17px;
+              color: #1a1e25;
+            }
+          }
+        }
+
+        .right-side {
+          width: 262px;
+        }
       }
     }
   }
