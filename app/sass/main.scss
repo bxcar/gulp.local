@@ -377,6 +377,7 @@ body {
 
       .inner-container {
         padding-top: 38px;
+        padding-bottom: 110px;
       }
 
       h2 {
@@ -526,6 +527,7 @@ body {
             background-color: #fff;
             border-radius: 2px;
             margin-top: 36px;
+            height: 296px;
 
             img, h3 {
               display: inline-block;
@@ -563,6 +565,8 @@ body {
 
           .calendar {
             background-color: #fff;
+            height: 185px;
+            min-height: 185px;
             padding: {
               left: 15px;
               right: 15px;
@@ -581,6 +585,7 @@ body {
 
             table {
               width: 100%;
+              height: 124px;
               text-align: center;
             }
 
@@ -694,6 +699,34 @@ body {
               border-color: #bb1241;
             }
           }
+        }
+      }
+
+      .icons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-start;
+
+        .item {
+          text-transform: uppercase;
+          width: 286px;
+          margin-left: 53px;
+          margin-right: 53px;
+
+          img, span {
+            display: block;
+          }
+
+          span {
+            font-family: 'Bebas Neue Regular', sans-serif;
+            font-size: 24px;
+            color: #172023;
+            margin-top: 10px;
+          }
+        }
+
+        .item:first-child {
+          margin-left: 0;
         }
       }
     }

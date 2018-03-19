@@ -471,6 +471,7 @@ body {
 
 .container .main .about .inner-container {
   padding-top: 38px;
+  padding-bottom: 110px;
 }
 
 .container .main .about h2 {
@@ -626,6 +627,7 @@ body {
   -webkit-border-radius: 2px;
           border-radius: 2px;
   margin-top: 36px;
+  height: 296px;
   padding-top: 31px;
   padding-bottom: 31px;
   padding-left: 31px;
@@ -658,6 +660,8 @@ body {
 
 .container .main .about .wrapper .right-side .calendar {
   background-color: #fff;
+  height: 185px;
+  min-height: 185px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
@@ -676,6 +680,7 @@ body {
 
 .container .main .about .wrapper .right-side .calendar table {
   width: 100%;
+  height: 124px;
   text-align: center;
 }
 
@@ -780,4 +785,38 @@ body {
   background-color: #bb1241;
   color: #fff;
   border-color: #bb1241;
+}
+
+.container .main .about .icons {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .main .about .icons .item {
+  text-transform: uppercase;
+  width: 286px;
+  margin-left: 53px;
+  margin-right: 53px;
+}
+
+.container .main .about .icons .item img, .container .main .about .icons .item span {
+  display: block;
+}
+
+.container .main .about .icons .item span {
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-size: 24px;
+  color: #172023;
+  margin-top: 10px;
+}
+
+.container .main .about .icons .item:first-child {
+  margin-left: 0;
 }
