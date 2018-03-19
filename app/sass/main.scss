@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
+@font-face {
+  font-family: HelveticaNeueCyr Roman;
+  src: url(../fonts/helveticaneue-roman-webfont-webfont.ttf);
+}
+
 
 body {
   margin: {
@@ -361,6 +366,128 @@ body {
               top: 23px;
               bottom: 23px;
             }
+          }
+        }
+      }
+    }
+
+    .about {
+      background: url("../img/about-bg.png") no-repeat;
+      background-size: cover;
+
+      .inner-container {
+        padding-top: 38px;
+      }
+
+      h2 {
+        margin-top: 0;
+        font-family: 'Bebas Neue Regular', sans-serif;
+        font-size: 60px;
+        color: #fff;
+        text-align: center;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .left-side {
+          //height: 398px;
+          height: 404px;
+          width: 263px;
+
+          .news-date {
+            height: 313px;
+            position: relative;
+            text-transform: uppercase;
+
+            .date-container {
+             position: absolute;
+              top: 0;
+
+              .date {
+                display: inline-block;
+                padding: 15px 20px;
+                font-family: 'Open Sans Extrabold', sans-serif;
+                font-size: 14px;
+                color: #272727;
+                text-align: center;
+                border-right: 1px solid #e4e4e4;
+
+                span {
+                  font-family: 'Open Sans Extrabold', sans-serif;
+                  font-size: 30px;
+                  color: #272727;
+                }
+              }
+
+              .title {
+                font-family: 'Open Sans Extrabold', sans-serif;
+                font-size: 20px;
+                color: #272727;
+                padding: {
+                  top: 33px;
+                  left: 9px;
+                }
+                display: inline-block;
+                vertical-align: top;
+              }
+            }
+          }
+
+          .news-tile {
+            height: 100%;
+
+            div.desc {
+              position: relative;
+              background-color: #525252;
+              padding: {
+                left: 18px;
+                right: 15px;
+              }
+
+              span {
+                display: block;
+              }
+
+              span.title {
+                font-family: 'Open Sans Extrabold', sans-serif;
+                font-size: 18px;
+                color: #fff;
+                text-transform: uppercase;
+                padding: {
+                  top: 13px;
+                  bottom: 10px;
+                }
+              }
+
+              span.desc {
+                font-family: 'HelveticaNeueCyr Roman', sans-serif;
+                font-size: 13px;
+                color: #fefefe;
+                padding: {
+                  bottom: 14px;
+                }
+              }
+            }
+          }
+
+          .all-news-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: {
+              left: 78px;
+              right: 77px;
+              top: 18px;
+              bottom: 18px;
+            }
+            border: 3px solid #fff;
+            font-family: 'Open Sans Extrabold', sans-serif;
+            font-size: 14px;
+            color: #272727;
+            text-transform: uppercase;
+            text-decoration: none;
+            white-space: nowrap;
           }
         }
       }
