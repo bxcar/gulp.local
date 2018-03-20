@@ -1,0 +1,32 @@
+.main-information {
+  .smi {
+    border-bottom: none !important;
+  }
+
+ .content {
+   display: block !important;
+   margin-top: 25px;
+
+   .desc {
+     margin-left: 0 !important;
+
+     p {
+       line-height: 25px !important;
+       margin: {
+         top: 0 !important;
+         bottom: 0 !important;
+       }
+     }
+
+     p.mg-tp {
+       margin-top: 30px !important;
+     }
+   }
+
+   img {
+     float: left;
+     margin-right: 20px;
+     margin-bottom: 25px;
+   }
+ }
+}
