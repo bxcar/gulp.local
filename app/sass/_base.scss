@@ -54,6 +54,14 @@
   }
 }
 
+.documentation-common.documentation-without-text {
+  .content {
+    .item {
+      width: auto;
+    }
+  }
+}
+
 .top-common {
   h3 {
     font-family: 'Bebas Neue Regular', sans-serif;
@@ -70,11 +78,18 @@
     background-color: #fafafa;
     text-align: left;
     caption {
-      font-family: Bebas Neue Regular,sans-serif;
+      font-family: "Bebas Neue Regular", sans-serif;
       font-size: 42px;
       color: #404040;
       text-align: left;
       margin-bottom: 40px;
+
+      span {
+        font-family: "Open Sans Semibold", sans-serif;
+        font-size: 19px;
+        line-height: 18px;
+        color: #404040;
+      }
     }
 
     td,
@@ -103,7 +118,6 @@
     th:nth-child(2) {
       width: 250px;
     }
-
 
     th {
       font-weight: bold;
@@ -143,5 +157,15 @@
     text-decoration: none;
     white-space: nowrap;
   }
+}
+
+.simple-text-common {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 25px;
+  margin-top: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1a1e25;
 }
 
