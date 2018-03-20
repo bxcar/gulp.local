@@ -1,0 +1,147 @@
+.breadcrumbs-title-common {
+  margin: {
+    top: 30px;
+  }
+  .breadcrumbs {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #6c6c6c;
+  }
+
+  h2 {
+    font-family: 'Bebas Neue Regular', sans-serif;
+    font-size: 36px;
+    color: #404040;
+    margin-top: 5px;
+  }
+
+  border-bottom: 1px solid #ededed;
+}
+
+.documentation-common {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 30px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+
+      display: flex;
+      height: 100%;
+      justify-content: flex-end;
+
+      a {
+        font-family: 'Open Sans Semibold', sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        color: #404040;
+        text-decoration: none;
+        padding-left: 20px;
+        margin-top: -4px;
+      }
+    }
+  }
+
+  .subtitle {
+    display: inline-block;
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-size: 19px;
+    line-height: 18px;
+    color: #404040;
+    margin-bottom: 20px;
+  }
+}
+
+.top-common {
+  h3 {
+    font-family: 'Bebas Neue Regular', sans-serif;
+    font-size: 42px;
+    color: #404040;
+    margin-top: 25px;
+  }
+}
+
+.grey-table-common {
+  margin-top: 15px;
+  table {
+    width: 100%;
+    background-color: #fafafa;
+    text-align: left;
+    caption {
+      font-family: Bebas Neue Regular,sans-serif;
+      font-size: 42px;
+      color: #404040;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    td,
+    th {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: #404040;
+      padding-left: 30px;
+      height: 50px;
+      border-right: 1px solid #ededed;
+      border-top: 1px solid #ededed;
+    }
+
+    th {
+      border-top: none;
+    }
+
+    td:nth-child(3),
+    th:nth-child(3) {
+      border-right: none;
+    }
+
+    td:nth-child(1),
+    th:nth-child(1),
+    td:nth-child(2),
+    th:nth-child(2) {
+      width: 250px;
+    }
+
+
+    th {
+      font-weight: bold;
+    }
+  }
+
+  .single-button-common {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+    a {
+      padding: {
+        left: 60px;
+        right: 60px;
+        top: 15px;
+        bottom: 15px;
+      }
+    }
+  }
+}
+
+.single-button-common {
+  a {
+    display: inline-block;
+    border: 3px solid #ededed;
+    padding: {
+      left: 25px;
+      right: 25px;
+      top: 12px;
+      bottom: 12px;
+    }
+    font-family: 'Open Sans Extrabold', sans-serif;
+    font-size: 14px;
+    color: #272727;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+}
+

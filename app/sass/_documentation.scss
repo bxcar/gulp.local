@@ -1,0 +1,26 @@
+.main-documentation{
+  .top-common {
+
+    h3 {
+      margin-bottom: 25px;
+    }
+  }
+
+  .content {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+
+    .item {
+      margin-right: 45px;
+      width: 330px;
+    }
+  }
+
+  .documentation-common.documentation-without-text {
+    .content {
+      .item {
+        width: auto;
+      }
+    }
+  }
+}
