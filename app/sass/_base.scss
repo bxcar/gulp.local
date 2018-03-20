@@ -238,3 +238,54 @@ h3 {
   }
 }
 
+.wrapper-testimonials-common {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+  .tile {
+    width: 33.3%;
+    border-right: 1px solid #ededed;
+    padding-right: 25px;
+    padding-left: 25px;
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(3) {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .tile-title {
+      display: flex;
+      align-items: center;
+
+      div {
+        padding-left: 15px;
+        span, a {
+          display: block;
+          font-size: 14px;
+        }
+
+        span {
+          font-family: 'Open Sans Extrabold', sans-serif;
+          color: #272727;
+          margin-bottom: 4px;
+        }
+
+        a {
+          font-family: 'Open Sans Semibold', sans-serif;
+          color: #5f8cc9;
+        }
+      }
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #272727;
+    }
+  }
+}
