@@ -1,3 +1,10 @@
+h3 {
+  font-family: 'Bebas Neue Regular', sans-serif;
+  font-size: 42px;
+  color: #404040;
+  margin-top: 25px;
+}
+
 .breadcrumbs-title-common {
   margin: {
     top: 30px;
@@ -167,5 +174,67 @@
   font-size: 15px;
   line-height: 25px;
   color: #1a1e25;
+}
+
+.smi-common {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 30px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      display: inline-block;
+      border: 3px solid #ededed;
+      padding: {
+        left: 25px;
+        right: 25px;
+        top: 12px;
+        bottom: 12px;
+      }
+      font-family: 'Open Sans Extrabold', sans-serif;
+      font-size: 14px;
+      color: #272727;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: flex-start;
+
+    .desc {
+      margin-left: 15px;
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        color: #1a1e25;
+      }
+      p.first {
+        margin-top: -4px;
+        margin-bottom: 0;
+      }
+
+      p.second {
+        margin-top: 5px;
+      }
+
+      img {
+        padding: {
+          left: 10px;
+          right: 10px;
+        }
+      }
+
+      img.first {
+        padding-left: 15px;
+      }
+    }
+  }
 }
 
