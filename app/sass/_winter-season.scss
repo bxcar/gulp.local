@@ -1,0 +1,91 @@
+.main-winter-season {
+
+  .breadcrumbs-title-common {
+    border-bottom: none;
+  }
+
+  .inner-container {
+    width: 1139px;
+  }
+
+  .ski-pass {
+    background-image: url(../img/ski-pass-bg.png);
+    margin-bottom: 40px;
+
+    .inner-container {
+      display: flex;
+      justify-content: space-between;
+
+      .img {
+        img {
+          margin-top: 65px;
+        }
+      }
+
+      .content {
+        width: 818px;
+
+        p {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          line-height: 18px;
+          color: #272727;
+        }
+      }
+
+      .top {
+        &>div {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        h3 {
+          margin-bottom: 0;
+        }
+
+        .single-button-common {
+          margin-top: 15px;
+
+          a {
+            border-color: #62a1da;
+
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .winter-season-tiles-common {
+    .tile-1 {
+      background-image: url("../img/winter-season-snowboard.png");
+    }
+    .tile-2 {
+      background-image: url("../img/winter-season-ski.png");
+    }
+    .tile-3 {
+      background-image: url("../img/winter-season-tubing.png");
+    }
+    .tile-4 {
+      background-image: url("../img/winter-season-batut-center.png");
+    }
+  }
+
+  .abon {
+
+    h3 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin: {
+        bottom: 25px;
+      }
+
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      line-height: 25px;
+      color: #1a1e25;
+    }
+  }
+}
