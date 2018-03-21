@@ -136,7 +136,7 @@ h3 {
     justify-content: center;
     margin-top: 45px;
 
-    a {
+    a, button {
       padding: {
         left: 60px;
         right: 60px;
@@ -148,7 +148,7 @@ h3 {
 }
 
 .single-button-common {
-  a {
+  a, button {
     display: inline-block;
     border: 3px solid #ededed;
     padding: {
@@ -287,5 +287,137 @@ h3 {
       font-size: 14px;
       color: #272727;
     }
+  }
+}
+
+.simple-form-common {
+  background-color: #f7f7f7;
+  margin-top: 45px;
+  padding: {
+    top: 40px;
+    bottom: 40px;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #171717;
+    margin-top: 0;
+  }
+
+  form {
+    width: 575px;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+
+    input, textarea {
+      outline: none;
+      border: 1px solid #cfcfcf;
+      margin-bottom: 15px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #515151;
+      padding: {
+        left: 40px;
+        right: 20px;
+      }
+    }
+
+    textarea {
+      width: 533px;
+      height: 94px;
+      padding: {
+        top: 10px;
+        left: 20px;
+        right: 20px;
+      }
+    }
+
+    input {
+      width: 513px;
+      height: 43px;
+    }
+
+    input[name="name"] {
+      background: url('../img/form-icon-name.png') no-repeat 15px 18px #fff;
+    }
+
+    input[name="email"] {
+      background: url('../img/form-icon-email.png') no-repeat 15px 20px #fff;
+    }
+
+    input[type="checkbox"] {
+      height: 15px;
+      outline: none;
+      width: auto;
+      float: left;
+      margin: 0;
+      margin-top: 2px;
+    }
+
+    label {
+      padding-left: 10px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      color: #626262;
+    }
+
+    .single-button-common {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+
+      button {
+        outline: none;
+        border: 3px solid #a1a1a1;
+        background: transparent;
+        padding: {
+          left: 70px;
+          right: 70px;
+          top: 14px;
+          bottom: 14px;
+        }
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.pagination-common {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img, span, a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img {
+    padding: {
+      left: 12px;
+      right: 12px;
+    }
+  }
+
+  span, a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #464646;
+    padding: 2px 10px;
+    text-decoration: none;
+  }
+
+  .active {
+    background-color: #62a1da;
+    border-radius: 2px;
   }
 }
