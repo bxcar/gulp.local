@@ -753,6 +753,10 @@ h3 {
         padding-left: 10px;
       }
 
+      &>span.last {
+        border-right: none;
+      }
+
       &>span span {
         font-weight: bold;
       }

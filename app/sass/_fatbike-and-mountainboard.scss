@@ -1,4 +1,9 @@
-.main-fatbike {
+.main-fatbike, .main-mountainboard {
+  &.inner-container {
+    width: 1139px;
+  }
+
+
   .grey-table-common {
     margin: {
       top: 30px;
@@ -6,7 +11,7 @@
 
     table {
       caption {
-        font-family: Bebas Neue Regular,sans-serif;
+        font-family: Bebas Neue Regular, sans-serif;
         font-size: 33px;
         color: #404040;
         margin-bottom: 10px;
@@ -24,5 +29,11 @@
         border-color: #62a1da;
       }
     }
+  }
+}
+
+.main-mountainboard {
+  .breadcrumbs-title-common {
+    border-bottom: none;
   }
 }
