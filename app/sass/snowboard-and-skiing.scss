@@ -1,0 +1,131 @@
+.main-snowboard-and-skiing {
+  &.inner-container {
+    width: 1140px;
+  }
+
+  .top-prices {
+    display: flex;
+    justify-content: space-between;
+
+    .item {
+      h2 {
+        font-family: 'Bebas Neue Regular', sans-serif;
+        font-size: 33px;
+        color: #404040;
+        margin: {
+          bottom: 10px;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      width: 556px;
+      background-color: #f8f8f8;
+
+      .flex-wrap {
+        width: 217px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .prices {
+          .item {
+            display: block;
+            border-bottom: 1px solid #ededed;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            line-height: 30px;
+            color: #272727;
+            padding: {
+              bottom: 14px;
+              top: 14px;
+            }
+
+            .dots {
+              color: #a3a3a3;
+              font-weight: 300;
+            }
+
+            span {
+              font-weight: bold;
+            }
+          }
+
+          .item:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin: {
+      top: 40px;
+      bottom: 40px;
+    }
+
+    a {
+      display: inline-block;
+      text-align: center;
+      background: url("../img/snowboard/bg.png") no-repeat;
+      background-size: cover;
+      font-family: 'Bebas Neue Regular', sans-serif;
+      font-size: 24px;
+      color: #fff;
+      padding: {
+        top: 18px;
+        bottom: 18px;
+      }
+      text-decoration: none;
+
+      img {
+        margin-right: 12px;
+      }
+    }
+
+    a:nth-child(1) {
+      width: 215px;
+
+      padding: {
+        left: 65px;
+        right: 70px;
+      }
+    }
+
+    a:nth-child(2) {
+      width: 180px;
+
+      padding: {
+        left: 85px;
+        right: 85px;
+      }
+    }
+
+    a:nth-child(3) {
+      width: 90px;
+
+      padding: {
+        left: 125px;
+        right: 135px;
+      }
+    }
+  }
+
+  .grey-table-common {
+    margin-top: 30px;
+
+    table {
+      caption {
+        font-family: 'Bebas Neue Regular', sans-serif;
+        font-size: 33px;
+        color: #404040;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

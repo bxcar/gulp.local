@@ -15,7 +15,7 @@ h3 {
     color: #6c6c6c;
   }
 
-  h2 {
+  h2, h1 {
     font-family: 'Bebas Neue Regular', sans-serif;
     font-size: 36px;
     color: #404040;
@@ -687,6 +687,71 @@ h3 {
       background-color: #000;
       opacity: .5;
       z-index: 1;
+    }
+  }
+}
+
+.price-with-desc-common {
+  h2 {
+    font-family: 'Bebas Neue Regular', sans-serif;
+    font-size: 33px;
+    color: #404040;
+    margin-bottom: 10px;
+  }
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    height: 337px;
+
+    .img {
+      width: 340px;
+    }
+
+    .content {
+      width: 360px;
+      padding: {
+        left: 25px;
+        right: 15px;
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #272727;
+      }
+    }
+
+    .prices {
+      width: 400px;
+
+      h3 {
+        font-family: 'Bebas Neue Regular', sans-serif;
+        font-size: 25px;
+        color: #404040;
+        letter-spacing: 0.075em;
+        margin-bottom: 10px;
+      }
+
+      &>span {
+        display: inline-block;
+        padding: {
+          right: 23px;
+          left: 20px;
+        }
+        border-right: 1px solid #ededed;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        color: #272727;
+        text-align: center;
+      }
+
+      &>span.first {
+        padding-left: 10px;
+      }
     }
   }
 }
