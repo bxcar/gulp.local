@@ -1,0 +1,37 @@
+.main-tubing {
+  &.inner-container {
+    width: 1140px;
+  }
+
+  .breadcrumbs-title-common {
+    border-bottom: 0;
+  }
+
+  .price-with-desc-common {
+    .block {
+      .flex-wrap-prices-common {
+        width: 245px;
+
+        .prices {
+          text-align: center;
+          .item {
+            border-right: none;
+          }
+        }
+      }
+
+      .content {
+        width: 550px;
+        margin: {
+          top: 25px;
+        }
+        padding: {
+          left: 0;
+          right: 55px;
+        }
+      }
+    }
+
+
+  }
+}

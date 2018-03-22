@@ -759,3 +759,38 @@ h3 {
     }
   }
 }
+
+.flex-wrap-prices-common {
+  width: 217px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .prices {
+    .item {
+      display: block;
+      border-bottom: 1px solid #ededed;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      color: #272727;
+      padding: {
+        bottom: 14px;
+        top: 14px;
+      }
+
+      .dots {
+        color: #a3a3a3;
+        font-weight: 300;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+  }
+}
