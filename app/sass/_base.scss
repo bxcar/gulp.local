@@ -760,6 +760,81 @@ h3 {
   }
 }
 
+.price-with-desc-v2-common {
+  .block {
+    .flex-wrap-prices-common {
+      width: 245px;
+
+      .prices {
+        text-align: center;
+        .item {
+          border-right: none;
+        }
+      }
+    }
+
+    .content {
+      width: 550px;
+      margin: {
+        top: 25px;
+      }
+      padding: {
+        left: 0;
+        right: 55px;
+      }
+    }
+  }
+}
+
+.price-with-desc-v3-common {
+  margin: {
+    top: 40px;
+  }
+
+  h2 {
+    margin: {
+      bottom: 25px;
+    }
+  }
+
+  .block {
+    .prices {
+
+      h3 {
+        margin: {
+          top: 15px;
+        }
+      }
+
+      .phone {
+        font-family: 'Open Sans Semibold', sans-serif;
+        font-size: 22px;
+        color: #404040;
+        background: url("../img/blue-phone-icon.png") 0 7px no-repeat;
+        padding: {
+          left: 30px;
+        }
+        margin: {
+          top: 30px;
+          left: 10px;
+        }
+        border-right: none;
+      }
+
+      .last {
+        border-right: none;
+      }
+
+      &>span {
+        padding: {
+          right: 20px;
+          left: 20px;
+        }
+      }
+    }
+  }
+}
+
 .flex-wrap-prices-common {
   width: 217px;
   display: flex;

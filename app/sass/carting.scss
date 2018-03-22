@@ -1,0 +1,35 @@
+.main-carting {
+  &.inner-container {
+    width: 1139px;
+  }
+
+  .breadcrumbs-title-common {
+    border-bottom: 0;
+  }
+
+  .grey-table-common {
+    margin: {
+      top: 40px;
+    }
+
+    table {
+      caption {
+        font-size: 33px;
+        margin: {
+          bottom: 22px;
+        }
+      }
+    }
+
+    .single-button-common {
+      margin: {
+        top: 58px;
+      }
+
+      a {
+        border-color: #62a1da;
+        padding: 12px 58px;
+      }
+    }
+  }
+}
