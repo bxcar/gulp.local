@@ -752,6 +752,10 @@ h3 {
       &>span.first {
         padding-left: 10px;
       }
+
+      &>span span {
+        font-weight: bold;
+      }
     }
   }
 }
