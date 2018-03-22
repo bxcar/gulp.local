@@ -869,3 +869,61 @@ h3 {
     }
   }
 }
+
+.top-prices-common {
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    h2 {
+      font-family: 'Bebas Neue Regular', sans-serif;
+      font-size: 33px;
+      color: #404040;
+      margin: {
+        bottom: 10px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 556px;
+    background-color: #f8f8f8;
+
+    .flex-wrap {
+      width: 217px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .prices {
+        .item {
+          display: block;
+          border-bottom: 1px solid #ededed;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          color: #272727;
+          padding: {
+            bottom: 14px;
+            top: 14px;
+          }
+
+          .dots {
+            color: #a3a3a3;
+            font-weight: 300;
+          }
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        .item:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

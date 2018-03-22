@@ -1,0 +1,28 @@
+.main-fatbike {
+  .grey-table-common {
+    margin: {
+      top: 30px;
+    }
+
+    table {
+      caption {
+        font-family: Bebas Neue Regular,sans-serif;
+        font-size: 33px;
+        color: #404040;
+        margin-bottom: 10px;
+        font-weight: bold;
+
+        margin: {
+          bottom: 10px;
+        }
+      }
+    }
+
+    .single-button-common {
+      a {
+        padding: 12px 60px;
+        border-color: #62a1da;
+      }
+    }
+  }
+}

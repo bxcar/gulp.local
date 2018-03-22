@@ -1,0 +1,118 @@
+.main-batut-center {
+
+  .inner-container {
+    width: 1139px;
+  }
+
+  .breadcrumbs-title-common {
+    border-bottom: none;
+  }
+
+  .content-block {
+    display: flex;
+    justify-content: center;
+    height: 260px;
+    margin: {
+      bottom: 20px;
+    }
+
+    img {
+      width: 260px;
+    }
+
+    .right-side {
+      background-color: #f8f8f8;
+      width: 824px;
+      padding: {
+        left: 25px;
+        right: 30px;
+        top: 5px;
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #272727;
+      }
+    }
+
+    &.block-1 {
+      .left-side {
+        background-image: url("../img/skiing/img-1.png");
+      }
+    }
+    &.block-2 {
+      .left-side {
+        background-image: url("../img/skiing/img-1.png");
+      }
+    }
+    &.block-3 {
+      .left-side {
+        background-image: url("../img/skiing/img-1.png");
+      }
+    }
+    &.block-4 {
+      .left-side {
+        background-image: url("../img/skiing/img-1.png");
+      }
+    }
+    &.block-5 {
+      .left-side {
+        background-image: url("../img/skiing/img-1.png");
+      }
+    }
+    &.block-6 {
+      .left-side {
+        background-image: url("../img/skiing/img-1.png");
+      }
+    }
+    &.block-7 {
+      .left-side {
+        background-image: url("../img/skiing/img-1.png");
+      }
+    }
+    &.block-8 {
+      .left-side {
+        background-image: url("../img/skiing/img-1.png");
+      }
+    }
+
+    .price-with-desc-common {
+      margin: {
+        top: 40px;
+      }
+    }
+  }
+
+  h2.inner-container {
+    font-family: 'Bebas Neue Regular', sans-serif;
+    font-size: 33px;
+    color: #404040;
+    margin: {
+      top: 65px;
+      bottom: 25px;
+    }
+  }
+
+  .content-block-2 {
+    .right-side {
+      padding: {
+        top: 0;
+      }
+
+      h3 {
+        font-family: 'Open Sans Semibold', sans-serif;
+        font-size: 22px;
+        color: #272727;
+        margin: 0;
+      }
+
+      p:nth-child(1) {
+        margin: {
+          top: 20px;
+        }
+      }
+    }
+  }
+}
