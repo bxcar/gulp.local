@@ -117,4 +117,36 @@
       }
     }
   }
+
+  h2.inner-container {
+    font-family: 'Bebas Neue Regular', sans-serif;
+    font-size: 33px;
+    color: #404040;
+    margin: {
+      top: 65px;
+      bottom: 25px;
+    }
+  }
+
+  .content-block-2 {
+    .right-side {
+      background: transparent;
+      padding: {
+        top: 0;
+      }
+
+      h3 {
+        font-family: 'Open Sans Semibold', sans-serif;
+        font-size: 22px;
+        color: #272727;
+        margin: 0;
+      }
+
+      p {
+        margin: {
+          top: 10px;
+        }
+      }
+    }
+  }
 }
