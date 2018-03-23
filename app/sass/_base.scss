@@ -428,8 +428,8 @@ h3 {
 }
 
 .answer-question-common {
-/*  border-bottom: 1px solid #ededed;
-  padding-bottom: 30px;*/
+  /*  border-bottom: 1px solid #ededed;
+    padding-bottom: 30px;*/
 
   .top {
     display: flex;
@@ -739,7 +739,7 @@ h3 {
         margin-bottom: 10px;
       }
 
-      &>span {
+      & > span {
         display: inline-block;
         padding: {
           right: 23px;
@@ -753,15 +753,15 @@ h3 {
         text-align: center;
       }
 
-      &>span.first {
+      & > span.first {
         padding-left: 10px;
       }
 
-      &>span.last {
+      & > span.last {
         border-right: none;
       }
 
-      &>span span {
+      & > span span {
         font-weight: bold;
       }
     }
@@ -833,7 +833,7 @@ h3 {
         border-right: none;
       }
 
-      &>span {
+      & > span {
         padding: {
           right: 20px;
           left: 20px;
@@ -953,4 +953,93 @@ h3 {
   background-color: #000;
   opacity: .5;
   z-index: 1;
+}
+
+.sg-common {
+  .block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ededed;
+    padding: {
+      bottom: 15px;
+    }
+
+    .left-side, .right-side {
+      width: 50%;
+      padding: {
+        right: 5%;
+      }
+
+      h2 {
+        font-family: 'Bebas Neue Regular', sans-serif;
+        font-size: 33px;
+        color: #404040;
+        margin: {
+          bottom: 15px;
+        }
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #272727;
+      }
+    }
+
+    &.middle {
+      border-bottom: none;
+
+      .left-side {
+        width: 100%;
+        padding: {
+          right: 3%;
+        }
+      }
+    }
+
+    &.bottom {
+      border-bottom: none;
+
+      .left-side, .right-side {
+        width: 489px;
+        background-color: #f8f8f8;
+        padding: {
+          left: 25px;
+          right: 40px;
+          top: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .trainer-phone {
+    h2 {
+      font-family: 'Bebas Neue Regular', sans-serif;
+      font-size: 27px;
+      color: #404040;
+      letter-spacing: 0.05em;
+      margin: {
+        bottom: 12px;
+      }
+    }
+
+    .phone {
+      font-family: 'Open Sans Semibold', sans-serif;
+      font-size: 22px;
+      color: #404040;
+      background: url("../img/blue-phone-icon.png") 0 7px no-repeat;
+      padding: {
+        left: 30px;
+      }
+      border-right: none;
+    }
+  }
+}
+
+.main-sg-common {
+  h1 {
+    margin-bottom: 25px;
+  }
 }
