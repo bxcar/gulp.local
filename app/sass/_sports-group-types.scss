@@ -1,0 +1,70 @@
+.main-sports-group-types {
+  .group-tiles {
+    display: flex;
+    justify-content: space-between;
+    margin: {
+      top: 10px;
+    }
+
+    .tile {
+      height: 266px;
+      width: 373px;
+      display: flex;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .flex-wrap {
+        text-align: center;
+        padding: {
+          left: 65px;
+          right: 65px;
+        }
+
+        .img-wrap {
+          height: 73px;
+          margin: {
+            top: 73px;
+          }
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        h2 {
+          font-family: 'Bebas Neue Regular', sans-serif;
+          font-size: 36px;
+          color: #fff;
+          margin: {
+            top: 10px;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .group-1 {
+    .tile:nth-child(1) {
+      background-image: url("../img/sports-group-types/bg.png");
+    }
+    .tile:nth-child(2) {
+      background-image: url("../img/sports-group-types/bg.png");
+    }
+    .tile:nth-child(3) {
+      background-image: url("../img/sports-group-types/bg.png");
+    }
+  }
+
+  .group-2 {
+    .tile:nth-child(1) {
+      background-image: url("../img/sports-group-types/bg.png");
+    }
+    .tile:nth-child(2) {
+      background-image: url("../img/sports-group-types/bg.png");
+    }
+    .tile:nth-child(3) {
+      background-image: url("../img/sports-group-types/bg.png");
+    }
+  }
+}

@@ -935,3 +935,22 @@ h3 {
     }
   }
 }
+
+.inner-container-1139-common {
+  width: 1139px;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.abs-bg-common {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .5;
+  z-index: 1;
+}
