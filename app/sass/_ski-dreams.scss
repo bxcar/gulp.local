@@ -1,0 +1,55 @@
+.main-ski-dreams {
+  .content-block-top {
+    align-items: center;
+    border: {
+      bottom: 1px solid #ededed;
+    }
+    height: 170px;
+
+    .right-side {
+      background-color: transparent;
+      p {
+        margin: {
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .content-block-2 {
+    height: 365px;
+    border: {
+      bottom: 1px solid #ededed;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue Regular', sans-serif;
+      font-size: 42px;
+      color: #404040;
+      margin: {
+        top: 0;
+        bottom: 20px;
+      }
+    }
+
+    .right-side {
+      p {
+        margin: {
+          top: 60px;
+        }
+      }
+    }
+  }
+
+  .single-button-common {
+    a {
+      border-color: #6ba7dc;
+    }
+  }
+
+  .breadcrumbs-title-common {
+    border: {
+      bottom: 1px solid #ededed;
+    }
+  }
+}
