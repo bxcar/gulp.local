@@ -1,0 +1,39 @@
+.main-online-camera {
+  .group-tiles {
+    display: flex;
+    justify-content: space-between;
+    margin: {
+      top: 10px;
+      bottom: 23px;
+    }
+
+    .tile {
+      height: 398px;
+      width: 557px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-decoration: none;
+    }
+  }
+
+  .group-1 {
+    .tile:nth-child(1) {
+      background-image: url("../img/online-camera-1.png");
+    }
+    .tile:nth-child(2) {
+      background-image: url("../img/online-camera-2.png");
+    }
+  }
+
+  .group-2 {
+    .tile:nth-child(1) {
+      background-image: url("../img/online-camera-1.png");
+    }
+    .tile:nth-child(2) {
+      background-image: url("../img/online-camera-2.png");
+    }
+  }
+}
