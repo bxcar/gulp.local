@@ -1,0 +1,57 @@
+.main-photo-and-video {
+  .group-tiles {
+    display: flex;
+    justify-content: space-between;
+    margin: {
+      top: 10px;
+    }
+
+    .tile {
+      height: 398px;
+      width: 557px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-decoration: none;
+
+      .flex-wrap {
+        text-align: center;
+        padding: {
+          left: 65px;
+          right: 65px;
+        }
+
+        .img-wrap {
+          height: 73px;
+          margin: {
+            //top: 73px;
+          }
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        h2 {
+          font-family: 'Bebas Neue Regular', sans-serif;
+          font-size: 36px;
+          color: #fff;
+          margin: {
+            top: 10px;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .group-1 {
+    .tile:nth-child(1) {
+      background-image: url("../img/bg-for-video.png");
+    }
+    .tile:nth-child(2) {
+      background-image: url("../img/bg-for-video-2.png");
+    }
+  }
+}
