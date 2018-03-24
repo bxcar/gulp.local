@@ -579,12 +579,42 @@ h3 {
 .news-tile-common {
   width: 272px;
   height: 487px;
+  position: relative;
 
   .img {
-    height: 230px;
+    height: 284px;
+
+    img {
+      height: 284px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .date-container {
+    position: absolute;
+    top: 0;
+
+    .date {
+      display: inline-block;
+      padding: 15px 20px;
+      font-family: 'Open Sans Extrabold', sans-serif;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      border-right: 1px solid #fff;
+
+      span {
+        font-family: 'Open Sans Extrabold', sans-serif;
+        font-size: 30px;
+        color: #fff;
+      }
+    }
   }
 
   .content {
+    background-color: #595959;
+
     border: {
       left: 1px solid #ededed;
       right: 1px solid #ededed;
@@ -592,24 +622,18 @@ h3 {
     }
 
     padding: {
-      top: 18px;
-      bottom: 18px;
+      top: 10px;
+      bottom: 25px;
       left: 10px;
       right: 10px;
     }
 
-    .date {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 12px;
-      line-height: 18px;
-      color: #7a7a7a;
-    }
 
     h3 {
       font-family: 'Open Sans', sans-serif;
-      font-size: 23px;
+      font-size: 20px;
       line-height: 24px;
-      color: #272727;
+      color: #fff;
       margin: 0;
     }
 
@@ -617,15 +641,48 @@ h3 {
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       line-height: 18px;
-      color: #272727;
+      color: #fff;
     }
 
     .single-button-common {
       display: block;
 
       a {
+        color: #fff;
         font-size: 12px;
-        padding: 10px 25px;
+        padding: 10px 30px;
+        border-color: #62a1da;
+      }
+    }
+  }
+
+  &:nth-child(2n) {
+    .date-container {
+      .date {
+        color: #000;
+        border-right: 1px solid #e4e4e4;
+
+        span {
+          color: #000;
+        }
+      }
+    }
+
+    .content {
+      background-color: #fff;
+
+      h3 {
+        color: #272727;
+      }
+
+      .text {
+        color: #272727;
+      }
+
+      .single-button-common {
+        a {
+          color: #272727;
+        }
       }
     }
   }
@@ -1231,6 +1288,28 @@ h3 {
     color: #272727;
     margin: {
       bottom: 30px;
+    }
+  }
+}
+
+.main-news-common {
+  .breadcrumbs-title-common {
+    border: none;
+  }
+
+  .news-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &>.single-button-common {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    a {
+      padding: 15px 60px;
     }
   }
 }
