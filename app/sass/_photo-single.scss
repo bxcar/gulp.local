@@ -1,0 +1,63 @@
+.main-photo-single {
+  .breadcrumbs-title-common {
+    margin: {
+      bottom: 27px;
+    }
+
+    h1 {
+      margin: {
+        bottom: 27px;
+      }
+    }
+  }
+
+  .img-100-text-common {
+
+    .img-wrap {
+      position: relative;
+    }
+
+    .flex-wrap-arrows {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        padding: {
+          left: 22px;
+          right: 22px;
+        }
+      }
+    }
+
+    .flex-wrap-arrows-min {
+      img {
+        padding: {
+          left: 19px;
+          right: 19px;
+        }
+      }
+    }
+
+    h2 {
+      font-family: 'Bebas Neue Regular', sans-serif;
+      font-size: 30px;
+      color: #404040;
+    }
+
+    .flex-wrap {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: {
+        top: 8px;
+      }
+    }
+  }
+}
