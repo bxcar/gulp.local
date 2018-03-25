@@ -304,15 +304,20 @@ body {
               font-family: 'Bebas Neue Regular', sans-serif;
               font-weight: bold;
               font-size: 130px;
-              color: #dc8344;
+              color: #bb1241;
             }
 
-            span {
+            span.main-subtitle {
               font-family: 'Bebas Neue Regular', sans-serif;
               font-weight: bold;
               font-size: 29px;
               color: #000;
               display: block;
+
+              span {
+                display: inline;
+                color: #bb1241;
+              }
             }
           }
 
@@ -320,6 +325,37 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-between;
+          }
+
+          .tiles-bottom {
+            justify-content: center;
+
+            .tile {
+              margin: {
+                right: 15px;
+              }
+
+              &:last-child {
+                margin: {
+                  right: 0;
+                }
+              }
+            }
+          }
+
+          .tile:hover {
+            width: 150px;
+            height: 110px;
+            border: 2px solid #8a1437;
+            //cursor: url("../img/cursor.png"), pointer;
+
+            img.simple {
+              display: none;
+            }
+
+            img.hover {
+              display: block;
+            }
           }
 
           .tile {
@@ -332,6 +368,10 @@ body {
             justify-content: center;
             flex-wrap: wrap;
             text-align: center;
+
+            img.hover {
+              display: none;
+            }
 
             span {
               font-family: 'Bebas Neue Regular', sans-serif;
@@ -375,7 +415,13 @@ body {
               top: 23px;
               bottom: 23px;
             }
+
+            &:hover {
+              background-color: #62a1da;
+              //cursor: url("../img/cursor.png"), default;
+            }
           }
+
         }
       }
     }
@@ -402,9 +448,19 @@ body {
         justify-content: space-between;
 
         .left-side {
-          //height: 398px;
+          position: relative;
           height: 404px;
           width: 263px;
+
+          .abs-bg-blue-common {
+            display: none;
+          }
+
+          &:hover {
+            .abs-bg-blue-common {
+              display: block;
+            }
+          }
 
           .news-date {
             height: 313px;
@@ -481,6 +537,7 @@ body {
               }
             }
           }
+
 
           .all-news-button {
             display: inline-block;
@@ -636,11 +693,21 @@ body {
           }
 
           .inform {
+            position: relative;
             height: 175px;
             margin-top: 22px;
             background-image: url('../img/all-to-skiing.png');
             background-size: cover;
-            //border-radius: 2px;
+
+            .abs-bg-blue-common {
+              display: none;
+            }
+
+            &:hover {
+              .abs-bg-blue-common {
+                display: block;
+              }
+            }
 
             .date {
               display: inline-block;
@@ -749,6 +816,17 @@ body {
           justify-content: center;
           background-size: cover;
           background-repeat: no-repeat;
+          position: relative;
+
+          .abs-bg-blue-common {
+            display: none;
+          }
+
+          &:hover {
+            .abs-bg-blue-common {
+              display: block;
+            }
+          }
 
           &:nth-child(1) {
             .tile-inner {
@@ -867,9 +945,30 @@ body {
           border-right: 1px solid #ededed;
           padding-right: 25px;
           padding-left: 25px;
+          padding: {
+            top: 5px;
+          }
+          border-bottom: 3px solid transparent;
 
-          &:nth-child(1) {
-            //padding-left: 0;
+          &:hover {
+            margin: {
+              top: -3px;
+              left: -3px;
+              right: 0;
+            }
+
+            cursor: default;
+
+            width: calc(33.3% - 2px);
+
+            max-height: 208px;
+
+            border: 3px solid #ededed;
+
+            &:nth-child(3) {
+              border-right: 3px solid #ededed;
+              width: calc(33.3% - 3px);
+            }
           }
 
           &:nth-child(3) {
@@ -896,6 +995,10 @@ body {
               a {
                 font-family: 'Open Sans Semibold', sans-serif;
                 color: #5f8cc9;
+
+                &:hover {
+                  color: #bb1241;
+                }
               }
             }
           }
@@ -1194,7 +1297,6 @@ body {
   }
 }
 
-
 //vertical adaptation
 @media only screen and (max-width: 1170px) {
   header {
@@ -1266,7 +1368,6 @@ body {
       }
     }
 
-
     .header-top-adapt, .header-top {
       justify-content: center !important;
     }
@@ -1278,7 +1379,7 @@ body {
     .header-menu {
       background: none !important;
       margin-bottom: 57px;
-      div nav:first-child .nav-item-hide{
+      div nav:first-child .nav-item-hide {
         display: none;
       }
 

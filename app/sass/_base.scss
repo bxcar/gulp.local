@@ -1022,6 +1022,28 @@ h3 {
   z-index: 1;
 }
 
+.abs-bg-blue-common {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border: 2px solid #64a1d0;
+  .shadow {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 100%;
+    height: 100%;
+    background-color: #62a1da;
+    opacity: .2;
+    z-index: 1;
+    box-shadow: 0 0 35px #62a1da;
+    border: 2px solid #64a1d0;
+  }
+}
+
 .sg-common {
   .block {
     display: flex;
