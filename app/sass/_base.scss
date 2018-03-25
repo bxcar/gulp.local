@@ -43,6 +43,14 @@ h3 {
   border-bottom: 1px solid #ededed;
   padding-bottom: 30px;
 
+  &.grey-table-common {
+    .content {
+      .item {
+        justify-content: flex-start;
+      }
+    }
+  }
+
   .content {
     display: flex;
     justify-content: space-between;
@@ -138,6 +146,99 @@ h3 {
     td:nth-child(2),
     th:nth-child(2) {
       width: 250px;
+    }
+
+    th {
+      font-weight: bold;
+    }
+  }
+
+  .single-button-common {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+    a, button {
+      padding: {
+        left: 60px;
+        right: 60px;
+        top: 15px;
+        bottom: 15px;
+      }
+    }
+  }
+}
+
+.grey-table-6-common {
+  margin-top: 15px;
+  table {
+    width: 100%;
+    background-color: #ededed;
+    border-bottom: 1px solid #ededed;
+
+    text-align: left;
+    caption {
+      font-family: "Bebas Neue Regular", sans-serif;
+      font-size: 42px;
+      color: #404040;
+      text-align: left;
+      margin-bottom: 40px;
+
+      span {
+        font-family: "Open Sans Semibold", sans-serif;
+        font-size: 19px;
+        line-height: 18px;
+        color: #404040;
+      }
+    }
+
+    td,
+    th {
+      font-family: 'Open Sans', sans-serif;
+      color: #404040;
+      height: 50px;
+      border-right: 1px solid #ededed;
+      border-top: 1px solid #ededed;
+      background-color: #fafafa;
+    }
+
+    td {
+      font-size: 15px;
+    }
+
+    th {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 16px;
+      border-top: none;
+      background-color: #62a1da;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 12px 12px;
+      height: 255px;
+      vertical-align: top;
+    }
+
+    td:nth-child(6),
+    th:nth-child(6) {
+      border-right: none;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    th:nth-child(1) {
+      width: 35px;
+      text-align: center;
+    }
+    th:nth-child(2) {
+      width: 90px;
+      text-align: center;
+    }
+    th:nth-child(3),
+    th:nth-child(4),
+    th:nth-child(5){
+      width: 220px;
     }
 
     th {
@@ -588,8 +689,20 @@ h3 {
 
 .news-tile-common {
   width: 272px;
-  height: 487px;
+  //height: 487px;
+  height: 492px;
   position: relative;
+
+  .abs-bg-blue-common {
+    display: none;
+  }
+
+  &:hover {
+    .abs-bg-blue-common {
+      display: block;
+      z-index: -1;
+    }
+  }
 
   .img {
     height: 284px;
@@ -1037,9 +1150,9 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: #62a1da;
-    opacity: .2;
+    opacity: .3;
     z-index: 1;
-    box-shadow: 0 0 35px #62a1da;
+    box-shadow: 0 0 45px #62a1da;
     border: 2px solid #64a1d0;
   }
 }

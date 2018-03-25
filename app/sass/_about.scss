@@ -57,6 +57,20 @@
       display: flex;
       justify-content: flex-start;
 
+      .wrap-img {
+        position: relative;
+
+        .abs-bg-blue-common {
+          display: none;
+        }
+
+        &:hover {
+          .abs-bg-blue-common {
+            display: block;
+          }
+        }
+      }
+
       .desc {
         margin-left: 15px;
         p {
