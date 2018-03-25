@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&subset=cyrillic,cyrillic-ext,latin-ext');
+
+@font-face {
+  font-family: HelveticaNeueCyr Roman;
+  src: url(../fonts/helveticaneue-roman-webfont-webfont.ttf);
+}
+
 h3 {
   font-family: 'Bebas Neue Regular', sans-serif;
   font-size: 42px;
@@ -1355,5 +1365,74 @@ h3 {
   /* Firefox 18- */
   :-ms-input-placeholder {
     color: #dddddd;
+  }
+}
+
+.table-blue-titles-common {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    tr {
+      th {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+        background-color: #62a1da;
+        text-transform: uppercase;
+        text-align: center;
+        padding: {
+          top: 11px;
+          bottom: 11px;
+        }
+        border-right: 1px solid #ededed;
+        &:last-child {
+          border-right: none;
+        }
+
+        &:nth-child(1) {
+          width: 225px;
+        }
+        &:nth-child(2) {
+          width: 183px;
+        }
+        &:nth-child(3) {
+          width: 159px;
+        }
+        &:nth-child(4) {
+          width: 238px;
+        }
+        &:nth-child(5) {
+          width: 169px;
+        }
+      }
+
+      td {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: #404040;
+        text-align: center;
+        padding: {
+          left: 22px;
+          right: 22px;
+        }
+        background-color: #fafafa;
+        border: 1px solid #ededed;
+
+        img {
+          padding: {
+            top: 5px;
+            bottom: 5px;
+          }
+        }
+      }
+
+      td:first-child {
+        border-left: none;
+      }
+      td:last-child {
+        border-right: none;
+      }
+    }
   }
 }
