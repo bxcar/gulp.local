@@ -1,0 +1,50 @@
+.main-search-results {
+  .results-amount {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #272727;
+    font-weight: bold;
+    padding: {
+      top: 23px;
+      bottom: 17px;
+    }
+    display: block;
+    border-bottom: 1px solid #ededed;
+  }
+
+  .results {
+    .item {
+      border-bottom: 1px solid #ededed;
+      margin: {
+        top: 23px;
+      }
+      padding: {
+        bottom: 10px;
+      }
+
+      .title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        color: #62a1da;
+      }
+
+      p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: #272727;
+
+        .red {
+          color: #cf0e0e;
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+  }
+}

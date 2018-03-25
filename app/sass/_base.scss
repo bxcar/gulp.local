@@ -1313,3 +1313,47 @@ h3 {
     }
   }
 }
+
+.search-form-common {
+  width: 100%;
+  order: 3;
+  position: relative;
+  margin-top: 38px;
+
+  input {
+    outline: none;
+  }
+
+  input[type="text"] {
+    height: 38px;
+    padding-left: 10px;
+    border: 1px solid #dcdcdc;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    width: 315px;
+  }
+
+  input[type="image"] {
+    position: absolute;
+    left: 299px;
+    top: 12px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #dddddd;
+  }
+  ::-moz-placeholder {
+    color: #dddddd;
+  }
+  /* Firefox 19+ */
+  :-moz-placeholder {
+    color: #dddddd;
+  }
+  /* Firefox 18- */
+  :-ms-input-placeholder {
+    color: #dddddd;
+  }
+}
