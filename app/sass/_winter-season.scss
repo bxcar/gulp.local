@@ -88,4 +88,59 @@
       color: #1a1e25;
     }
   }
+
+  .grey-table-6-common {
+
+    &:nth-child(2) {
+      table {
+        tr {
+          th:nth-child(2) {
+            width: 270px;
+          }
+        }
+      }
+
+    }
+
+    h3 {
+      margin: {
+        top: 30px;
+      }
+    }
+
+    table {
+      th {
+        height: 32px;
+        text-align: left;
+        vertical-align: middle;
+        padding: {
+          right: 30px;
+        }
+      }
+
+      th:nth-child(2),
+      th:nth-child(3),
+      th:nth-child(4),
+      th:nth-child(5),
+      th:nth-child(6) {
+        width: 15px;
+      }
+
+      td {
+        text-align: left;
+        padding: {
+          left: 12px;
+          right: 30px;
+        }
+
+        &.union {
+          text-align: center;
+          padding: {
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
 }

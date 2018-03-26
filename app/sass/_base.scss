@@ -843,6 +843,16 @@ h3 {
     width: 560px;
     height: 400px;
 
+    .abs-bg-blue-common {
+      display: none;
+    }
+
+    &:hover {
+      .abs-bg-blue-common {
+        display: block;
+      }
+    }
+
     img, span {
       display: block;
       margin: {

@@ -116,8 +116,14 @@
     }
   }
 
-  .grey-table-common {
+  .grey-table-6-common {
     margin-top: 30px;
+
+    h3 {
+      margin: {
+        bottom: 20px;
+      }
+    }
 
     table {
       caption {
@@ -125,6 +131,26 @@
         font-size: 33px;
         color: #404040;
         margin-bottom: 20px;
+      }
+
+      tr {
+        th {
+          height: 36px;
+          vertical-align: middle;
+          text-align: center;
+        }
+
+        th:nth-child(2),
+        th:nth-child(3) {
+          width: 27%;
+        }
+
+        td:first-child {
+          text-align: left;
+          padding: {
+            left: 22px;
+          }
+        }
       }
     }
   }
