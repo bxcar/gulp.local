@@ -7,4 +7,17 @@
       margin-bottom: 10px;
     }
   }
+
+  .single-button-common {
+    display: flex;
+    justify-content: center;
+    margin: {
+      top: 35px;
+    }
+
+    a {
+      padding: 12px 60px;
+      border-color: #62a1da;
+    }
+  }
 }

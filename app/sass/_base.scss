@@ -1011,6 +1011,13 @@ h3 {
       }
 
       .prices {
+
+        &.dots {
+          margin: {
+            top: 15px;
+          }
+        }
+
         .price {
           padding: {
             left: 7px;
@@ -1023,6 +1030,7 @@ h3 {
         .phone {
           margin: {
             top: 0;
+            left: 0;
           }
         }
       }
