@@ -984,6 +984,28 @@ h3 {
   }
 }
 
+.price-with-desc-v3-1-common {
+  .block {
+    justify-content: flex-start;
+
+    .content {
+      width: 715px;
+
+      padding: {
+        left: 30px;
+      }
+
+      .prices {
+        .phone {
+          margin: {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 .price-with-desc-v3-common {
   margin: {
     top: 40px;

@@ -8,6 +8,23 @@
     border-bottom: none;
   }
 
+  .price-with-desc-common {
+    .block {
+      .content {
+        .single-button-common {
+          margin: {
+            top: 20px;
+          }
+
+          a {
+            border-color: #62a1da;
+            padding: 10px 58px;
+          }
+        }
+      }
+    }
+  }
+
   .content-block {
     display: flex;
     justify-content: center;
@@ -113,6 +130,105 @@
           top: 20px;
         }
       }
+    }
+  }
+
+  .grey-table-6-common {
+    margin: {
+      top: 40px;
+    }
+
+    h3 {
+      margin: {
+        bottom: 20px;
+      }
+    }
+
+    table {
+      caption {
+        font-size: 33px;
+        margin: {
+          bottom: 22px;
+        }
+      }
+
+      tr {
+        .bold {
+          text-align: center;
+          font-family: 'Open Sans Condensed',sans-serif;
+          font-size: 15px;
+          color: #404040;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        &.without-border {
+          th {
+            border-color: #62a1da;
+          }
+        }
+      }
+
+      th {
+        font-family: 'Open Sans Condensed',sans-serif;
+        font-size: 15px;
+        color: #404040;
+        height: 36px;
+        background-color: #fafafa;
+        vertical-align: middle;
+        text-align: center;
+        width: 33.3%;
+      }
+
+      td {
+        text-align: center;
+        padding: {
+          left: 12px;
+        }
+      }
+
+      th.blue {
+        background-color: #62a1da;
+        color: #fff;
+      }
+    }
+
+    .single-button-common {
+      margin: {
+        top: 58px;
+      }
+
+      a {
+        border-color: #62a1da;
+        padding: 12px 58px;
+      }
+    }
+  }
+
+  .services {
+    h3 {
+      margin: {
+        bottom: 20px;
+        top: 40px;
+      }
+    }
+
+    .single-button-common {
+      display: flex;
+      justify-content: center;
+      margin: {
+        top: 45px;
+      }
+
+      a {
+        border-color: #62a1da;
+        padding: 10px 58px;
+      }
+    }
+
+    .flex-wrap {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

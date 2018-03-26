@@ -7,9 +7,15 @@
     border-bottom: 0;
   }
 
-  .grey-table-common {
+  .grey-table-6-common {
     margin: {
       top: 40px;
+    }
+
+    h3 {
+      margin: {
+        bottom: 20px;
+      }
     }
 
     table {
@@ -18,6 +24,46 @@
         margin: {
           bottom: 22px;
         }
+      }
+
+      th {
+        font-family: 'Open Sans Condensed',sans-serif;
+        font-size: 15px;
+        color: #404040;
+        height: 36px;
+        background-color: #fafafa;
+        vertical-align: middle;
+        text-align: left;
+      }
+
+      td {
+        text-align: left;
+        padding: {
+          left: 12px;
+        }
+      }
+
+      tr:nth-child(2) {
+        th {
+          font-family: 'Open Sans',sans-serif;
+          font-weight: normal;
+          text-transform: none;
+        }
+      }
+
+      tr:first-child {
+        th:first-child {
+          width: 20%;
+        }
+
+        th:last-child {
+          width: 30%;
+        }
+      }
+
+      th.blue {
+        background-color: #62a1da;
+        color: #fff;
       }
     }
 
@@ -30,6 +76,33 @@
         border-color: #62a1da;
         padding: 12px 58px;
       }
+    }
+  }
+
+  .services {
+    h3 {
+      margin: {
+        bottom: 20px;
+        top: 40px;
+      }
+    }
+
+    .single-button-common {
+      display: flex;
+      justify-content: center;
+      margin: {
+        top: 45px;
+      }
+
+      a {
+        border-color: #62a1da;
+        padding: 10px 58px;
+      }
+    }
+
+    .flex-wrap {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
