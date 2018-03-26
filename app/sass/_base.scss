@@ -237,7 +237,7 @@ h3 {
     }
     th:nth-child(3),
     th:nth-child(4),
-    th:nth-child(5){
+    th:nth-child(5) {
       width: 220px;
     }
 
@@ -751,7 +751,6 @@ h3 {
       right: 10px;
     }
 
-
     h3 {
       font-family: 'Open Sans', sans-serif;
       font-size: 20px;
@@ -886,6 +885,22 @@ h3 {
 }
 
 .price-with-desc-common {
+
+  .block {
+    .content {
+      .single-button-common {
+        margin: {
+          top: 20px;
+        }
+
+        a {
+          border-color: #62a1da;
+          padding: 10px 58px;
+        }
+      }
+    }
+  }
+
   h2 {
     font-family: 'Bebas Neue Regular', sans-serif;
     font-size: 33px;
@@ -996,6 +1011,15 @@ h3 {
       }
 
       .prices {
+        .price {
+          padding: {
+            left: 7px;
+          }
+          border: {
+            right: none;
+          }
+        }
+
         .phone {
           margin: {
             top: 0;
@@ -1350,7 +1374,6 @@ h3 {
         text-align: center;
         border-right: 1px solid #e4e4e4;
 
-
         &.nav-item-hide {
           width: 125px;
         }
@@ -1358,7 +1381,6 @@ h3 {
         .submenu {
           display: none;
         }
-
 
         a {
           border: none !important;
@@ -1369,7 +1391,6 @@ h3 {
       li.has-submenu {
         position: relative;
       }
-
 
       li:hover {
         background-color: #333333;
@@ -1427,7 +1448,7 @@ h3 {
   .header-menu-common {
     background: none !important;
     margin-bottom: 57px;
-    div nav ul:first-child .nav-item-hide{
+    div nav ul:first-child .nav-item-hide {
       display: none;
     }
 
@@ -1480,7 +1501,7 @@ h3 {
     margin-bottom: 25px;
   }
 
-  &>.single-button-common {
+  & > .single-button-common {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -1601,5 +1622,32 @@ h3 {
         border-right: none;
       }
     }
+  }
+}
+
+.services-common {
+  h3 {
+    margin: {
+      bottom: 20px;
+      top: 40px;
+    }
+  }
+
+  .single-button-common {
+    display: flex;
+    justify-content: center;
+    margin: {
+      top: 45px;
+    }
+
+    a {
+      border-color: #62a1da;
+      padding: 10px 58px;
+    }
+  }
+
+  .flex-wrap {
+    display: flex;
+    justify-content: space-between;
   }
 }
