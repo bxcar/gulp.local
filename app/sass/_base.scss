@@ -262,6 +262,112 @@ h3 {
   }
 }
 
+.grey-table-8-common {
+  margin-top: 15px;
+  table {
+    width: 100%;
+    background-color: #ededed;
+    border-bottom: 1px solid #ededed;
+
+    text-align: left;
+    caption {
+      font-family: "Bebas Neue Regular", sans-serif;
+      font-size: 42px;
+      color: #404040;
+      text-align: left;
+      margin-bottom: 40px;
+
+      span {
+        font-family: "Open Sans Semibold", sans-serif;
+        font-size: 19px;
+        line-height: 18px;
+        color: #404040;
+      }
+    }
+
+    td,
+    th {
+      font-family: 'Open Sans', sans-serif;
+      color: #404040;
+      height: 36px;
+      border-right: 1px solid #ededed;
+      border-top: 1px solid #ededed;
+      background-color: #fafafa;
+      vertical-align: middle;
+    }
+
+    td {
+      font-size: 15px;
+      height: 59px;
+    }
+
+    th {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 16px;
+      border-top: none;
+      background-color: #62a1da;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 12px 12px;
+      text-align: center;
+    }
+
+    th:first-child {
+      width: 215px;
+      text-align: left;
+    }
+
+
+
+    td:nth-child(8),
+    th:nth-child(8) {
+      border-right: none;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+    }
+  }
+
+  .single-button-common {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+    a, button {
+      padding: {
+        left: 60px;
+        right: 60px;
+        top: 15px;
+        bottom: 15px;
+      }
+    }
+  }
+
+  .download-shedule {
+    margin: {
+      top: 30px;
+    }
+    a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      line-height: 18px;
+      color: #404040;
+      text-decoration: none;
+      padding-left: 3px;
+    }
+
+    a, img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
 .single-button-common {
   a, button {
     display: inline-block;
@@ -1277,11 +1383,35 @@ h3 {
           bottom: 0;
         }
       }
+
+      .left-side {
+        padding: {
+          bottom: 20px;
+        }
+
+        .flex-wrap {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            margin: {
+              top: 0;
+            }
+
+            padding: {
+              left: 20px;
+            }
+          }
+        }
+      }
     }
   }
 
   .trainer-phone {
-    h2 {
+    margin-left: 164px;
+    margin-top: -7px;
+    /*h2 {
       font-family: 'Bebas Neue Regular', sans-serif;
       font-size: 27px;
       color: #404040;
@@ -1289,7 +1419,7 @@ h3 {
       margin: {
         bottom: 12px;
       }
-    }
+    }*/
 
     .phone {
       font-family: 'Open Sans Semibold', sans-serif;
