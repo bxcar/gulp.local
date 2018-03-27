@@ -26,7 +26,7 @@
                     <img src="img/dwn-link.png">
                     <a href="#">Скачать прайс-лист</a>
                 </div>
-                <form class="search-field" action="#" method="post">
+                <form class="search-field search-field-common" action="#" method="post">
                     <input name="search" type="text" placeholder="Поиск" required>
                     <input type="image" src="img/search-button.png" alt="Submit Form"/>
                 </form>
@@ -37,8 +37,9 @@
                 <a href="https://instagram.com"><img src="img/inst.png"></a>
             </div>
 
-            <div class="phone-email">
+            <div class="phone-email phone-email-common">
                 <div>
+                    <a href="#" class="visually-impaired-common"><img src="img/eye-icon.png">Версия для слабовидящих</a>
                     <span class="phone">+7 (3452) 695 158</span>
                     <span class="email">vgorki@gmail.com</span>
                 </div>
@@ -46,41 +47,53 @@
             <div class="header-camera">
                 <div>
                     <img src="img/camera.png">
-                    <span>Камера онлайн</span>
+                    <span>Online camera</span>
                 </div>
             </div>
         </div>
-        <div class="header-top-adapt" style="display: none;">
+        <div class="header-top-adapt header-top-adapt-common" style="display: none;">
             <div class="social-buttons">
                 <a href="https://vk.com"><img src="img/vk.png"></a>
                 <a href="https://instagram.com"><img src="img/inst.png"></a>
             </div>
 
-            <div class="phone-email">
+            <div class="phone-email phone-email-common">
                 <div>
+                    <a href="#" class="visually-impaired-common"><img src="img/eye-icon.png">Версия для слабовидящих</a>
                     <span class="phone">+7 (3452) 695 158</span>
                     <span class="email">vgorki@gmail.com</span>
                 </div>
             </div>
         </div>
-        <div class="header-menu">
+        <div class="header-menu header-menu-common">
             <div>
                 <nav>
-                    <a href="#">О нас</a>
-                    <a href="#">Спортивные события</a>
-                    <a href="#">Зиминий сезон</a>
-                    <a href="#">Летний сезон</a>
-                    <a href="#">Группы спортивной подготовки</a>
-                    <a class="nav-item-hide" href="#">Лыжи мечты</a>
-                    <a class="nav-item-hide" href="#">Фото и видео</a>
-                    <a class="nav-item-hide" href="#">Режим работы</a>
-                    <a class="nav-item-hide" href="#">Контакты</a>
+                    <ul class="desktop-menu">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Спортивные события</a></li>
+                        <li class="has-submenu"><a href="#">Зиминий сезон</a>
+                            <ul class="submenu">
+                                <li><a href="#">Сноуборд</a></li>
+                                <li><a href="#">Лыжи</a></li>
+                                <li><a href="#">Тюбинг</a></li>
+                                <li><a href="#">Батут-центр</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Летний сезон</a></li>
+                        <li><a href="#">Группы спортивной подготовки</a></li>
+                        <li class="nav-item-hide"><a href="#">Лыжи мечты</a></li>
+                        <li class="nav-item-hide"><a href="#">Фото и видео</a></li>
+                        <li class="nav-item-hide"><a href="#">Режим работы</a></li>
+                        <li class="nav-item-hide"><a href="#">Контакты</a></li>
+                    </ul>
                 </nav>
                 <nav class="nav-adapt" style="display: none;">
-                    <a href="#">Лыжи мечты</a>
-                    <a href="#">Фото и видео</a>
-                    <a href="#">Режим работы</a>
-                    <a href="#">Контакты</a>
+                    <ul>
+                        <li><a href="#">Лыжи мечты</a></li>
+                        <li><a href="#">Фото и видео</a></li>
+                        <li><a href="#">Режим работы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -124,6 +137,9 @@
 
         <div class="winter-season-tiles-common inner-container">
             <div class="tile tile-1">
+                <div class="abs-bg-blue-common">
+                    <div class="shadow"></div>
+                </div>
                 <div class="black"></div>
                 <div class="icon-wrap">
                     <img src="img/winter-season-snowboard-icon.png">
@@ -131,6 +147,9 @@
                 </div>
             </div>
             <div class="tile tile-2">
+                <div class="abs-bg-blue-common">
+                    <div class="shadow"></div>
+                </div>
                 <div class="black"></div>
                 <div class="icon-wrap">
                     <img src="img/winter-season-ski-icon.png">
@@ -140,6 +159,9 @@
         </div>
         <div class="winter-season-tiles-common inner-container">
             <div class="tile tile-3">
+                <div class="abs-bg-blue-common">
+                    <div class="shadow"></div>
+                </div>
                 <div class="black"></div>
                 <div class="icon-wrap">
                     <img src="img/winter-season-tubing-icon.png">
@@ -147,6 +169,9 @@
                 </div>
             </div>
             <div class="tile tile-4">
+                <div class="abs-bg-blue-common">
+                    <div class="shadow"></div>
+                </div>
                 <div class="black"></div>
                 <div class="icon-wrap">
                     <img src="img/winter-season-batut-icon.png">
@@ -156,16 +181,64 @@
         </div>
 
         <div class="abon inner-container">
-            <h3>Абонементы</h3>
-            <p>Целое образа вызывает бессознательный символизм. Классический реализм, согласно традиционным
-                представлениям, начинает персональный стиль. Возвышенное, в том числе, монотонно представляет собой
-                культовый образ. Психологический параллелизм неизменяем.</p>
-            <p>Идея самоценности искусства изящно просветляет миракль. Художественная ментальность готично аккумулирует
-                деструктивный культовый образ. Выразительное использует персональный художественный ритуал. Онтогенез,
-                следовательно, вызывает фактографический реконструктивный подход.</p>
-            <p>Стиль продолжает миракль. Архетип, согласно традиционным представлениям, готично иллюстрирует
-                незначительный катарсис. Переходное состояние дает деструктивный флегматик. Иррациональное в творчестве
-                потенциально.</p>
+            <div class="grey-table-6-common">
+                <h3>Абонементы</h3>
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <th>Спортивный инвентарь</th>
+                        <th>Стоимость за 30мин. (руб)</th>
+                        <th>Стоимость за 30мин. (руб)</th>
+                        <th>Стоимость за 30мин. (руб)</th>
+                        <th>Стоимость за 30мин. (руб)</th>
+                        <th>Стоимость за 30мин. (руб)</th>
+                    </tr>
+                    <tr>
+                        <td>Подъемник “Взрослый”</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Подъемник “Детский” (дети до 12 лет)</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Разово</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Весь день</td>
+                        <td class="union" colspan="5">100</td>
+                    </tr>
+                    <tr>
+                        <td>Еще на весь день</td>
+                        <td class="union" colspan="5">100</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="grey-table-6-common">
+                <h3>Хранение спортивного инвентаря</h3>
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <th>Наименование</th>
+                        <th>стоимость за 1 день (руб)</th>
+                    </tr>
+                    <tr>
+                        <td>Комплект</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
 

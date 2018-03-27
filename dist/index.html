@@ -18,7 +18,6 @@
             </div>
 
             <div class="header-search">
-                <!--<div class="download-link-wrap">-->
                 <div class="download-link">
                     <img src="img/dwn-link.png">
                     <a href="#">Скачать форму договора</a>
@@ -27,8 +26,7 @@
                     <img src="img/dwn-link.png">
                     <a href="#">Скачать прайс-лист</a>
                 </div>
-                <!--</div>-->
-                <form class="search-field" action="#" method="post">
+                <form class="search-field search-field-common" action="#" method="post">
                     <input name="search" type="text" placeholder="Поиск" required>
                     <input type="image" src="img/search-button.png" alt="Submit Form"/>
                 </form>
@@ -39,8 +37,9 @@
                 <a href="https://instagram.com"><img src="img/inst.png"></a>
             </div>
 
-            <div class="phone-email">
+            <div class="phone-email phone-email-common">
                 <div>
+                    <a href="#" class="visually-impaired-common"><img src="img/eye-icon.png">Версия для слабовидящих</a>
                     <span class="phone">+7 (3452) 695 158</span>
                     <span class="email">vgorki@gmail.com</span>
                 </div>
@@ -48,41 +47,53 @@
             <div class="header-camera">
                 <div>
                     <img src="img/camera.png">
-                    <span>Камера онлайн</span>
+                    <span>Online camera</span>
                 </div>
             </div>
         </div>
-        <div class="header-top-adapt" style="display: none;">
+        <div class="header-top-adapt header-top-adapt-common" style="display: none;">
             <div class="social-buttons">
                 <a href="https://vk.com"><img src="img/vk.png"></a>
                 <a href="https://instagram.com"><img src="img/inst.png"></a>
             </div>
 
-            <div class="phone-email">
+            <div class="phone-email phone-email-common">
                 <div>
+                    <a href="#" class="visually-impaired-common"><img src="img/eye-icon.png">Версия для слабовидящих</a>
                     <span class="phone">+7 (3452) 695 158</span>
                     <span class="email">vgorki@gmail.com</span>
                 </div>
             </div>
         </div>
-        <div class="header-menu">
+        <div class="header-menu header-menu-common">
             <div>
                 <nav>
-                    <a href="#">О нас</a>
-                    <a href="#">Спортивные события</a>
-                    <a href="#">Зиминий сезон</a>
-                    <a href="#">Летний сезон</a>
-                    <a href="#">Группы спортивной подготовки</a>
-                    <a class="nav-item-hide" href="#">Лыжи мечты</a>
-                    <a class="nav-item-hide" href="#">Фото и видео</a>
-                    <a class="nav-item-hide" href="#">Режим работы</a>
-                    <a class="nav-item-hide" href="#">Контакты</a>
+                    <ul class="desktop-menu">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Спортивные события</a></li>
+                        <li class="has-submenu"><a href="#">Зиминий сезон</a>
+                            <ul class="submenu">
+                                <li><a href="#">Сноуборд</a></li>
+                                <li><a href="#">Лыжи</a></li>
+                                <li><a href="#">Тюбинг</a></li>
+                                <li><a href="#">Батут-центр</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Летний сезон</a></li>
+                        <li><a href="#">Группы спортивной подготовки</a></li>
+                        <li class="nav-item-hide"><a href="#">Лыжи мечты</a></li>
+                        <li class="nav-item-hide"><a href="#">Фото и видео</a></li>
+                        <li class="nav-item-hide"><a href="#">Режим работы</a></li>
+                        <li class="nav-item-hide"><a href="#">Контакты</a></li>
+                    </ul>
                 </nav>
                 <nav class="nav-adapt" style="display: none;">
-                    <a href="#">Лыжи мечты</a>
-                    <a href="#">Фото и видео</a>
-                    <a href="#">Режим работы</a>
-                    <a href="#">Контакты</a>
+                    <ul>
+                        <li><a href="#">Лыжи мечты</a></li>
+                        <li><a href="#">Фото и видео</a></li>
+                        <li><a href="#">Режим работы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -95,14 +106,15 @@
                     <div class="slide-content">
                         <div class="top-block">
                             <h1>Сезон открыт!</h1>
-                            <span class="main-subtitle">Летний сезон включает в себя следующие виды спорта:</span>
+                            <span class="main-subtitle"><span>Летний сезон</span> включает в себя следующие виды спорта:</span>
                         </div>
                         <div class="tiles">
                             <div class="tiles-top">
                                 <div class="tile">
                                     <div>
                                         <div>
-                                            <img src="img/carting.png">
+                                            <img class="simple" src="img/carting.png">
+                                            <img class="hover" src="img/carting-hover.png">
                                         </div>
                                         <span>Картинг</span>
                                     </div>
@@ -133,14 +145,6 @@
                                 </div>
                             </div>
                             <div class="tiles-bottom">
-                                <div class="tile">
-                                    <div>
-                                        <div>
-                                            <img src="img/paintball.png">
-                                        </div>
-                                        <span>Пейнтбол</span>
-                                    </div>
-                                </div>
                                 <div class="tile">
                                     <div>
                                         <div>
@@ -179,6 +183,9 @@
                 <h2 style="display: none;" class="adapt">Центр спорта и отдыха<br>"Воронинские горки"</h2>
                 <div class="wrapper wrapper-not-adapt">
                     <div class="left-side news">
+                        <div class="abs-bg-blue-common">
+                            <div class="shadow"></div>
+                        </div>
                         <div class="news-tile">
                             <div class="news-date">
                                 <img src="img/news.png">
@@ -279,6 +286,9 @@
                         </div>
 
                         <div class="inform">
+                            <div class="abs-bg-blue-common">
+                                <div class="shadow"></div>
+                            </div>
                             <span class="date"><span>15</span><br>12/2017</span>
                             <span class="title">Все на лыжи!:)</span>
                             <span class="desc">Катание на лыжах</span>
@@ -398,6 +408,9 @@
                 <h3>Фото</h3>
                 <div class="wrapper">
                     <div class="tile">
+                        <div class="abs-bg-blue-common">
+                            <div class="shadow"></div>
+                        </div>
                         <div class="tile-inner">
                             <span>I Этап кубка по сноуборду</span>
                             <div class="tile-desc">
@@ -407,6 +420,9 @@
                         </div>
                     </div>
                     <div class="tile">
+                        <div class="abs-bg-blue-common">
+                            <div class="shadow"></div>
+                        </div>
                         <div class="tile-inner">
                             <span>Солнечный день</span>
                             <div class="tile-desc">
@@ -416,6 +432,9 @@
                         </div>
                     </div>
                     <div class="tile">
+                        <div class="abs-bg-blue-common">
+                            <div class="shadow"></div>
+                        </div>
                         <div class="tile-inner">
                             <span>Тюбинг 2018</span>
                             <div class="tile-desc">
@@ -436,6 +455,9 @@
                 <h3>Видео</h3>
                 <div class="wrapper">
                     <div class="tile">
+                        <div class="abs-bg-blue-common">
+                            <div class="shadow"></div>
+                        </div>
                         <div class="tile-inner">
                             <span>I Этап кубка по сноуборду</span>
                             <div class="tile-desc">
@@ -445,6 +467,9 @@
                         </div>
                     </div>
                     <div class="tile">
+                        <div class="abs-bg-blue-common">
+                            <div class="shadow"></div>
+                        </div>
                         <div class="tile-inner">
                             <span>Солнечный день</span>
                             <div class="tile-desc">
@@ -454,6 +479,9 @@
                         </div>
                     </div>
                     <div class="tile">
+                        <div class="abs-bg-blue-common">
+                            <div class="shadow"></div>
+                        </div>
                         <div class="tile-inner">
                             <span>Тюбинг 2018</span>
                             <div class="tile-desc">

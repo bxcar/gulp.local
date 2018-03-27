@@ -13,27 +13,49 @@
       justify-content: center;
       background-repeat: no-repeat;
       background-size: cover;
+      position: relative;
+      text-decoration: none;
+
+      .abs-bg-blue-common,
+      .flex-wrap .img-wrap.hover {
+        display: none;
+      }
+
+      &:hover {
+        .abs-bg-blue-common,
+        .flex-wrap .img-wrap.hover {
+          display: block;
+        }
+
+        .abs-bg-common,
+        .flex-wrap .img-wrap.simple {
+          display: none;
+        }
+      }
 
       .flex-wrap {
+        z-index: 2;
         text-align: center;
         padding: {
-          left: 65px;
-          right: 65px;
+          left: 40px;
+          right: 40px;
         }
 
         .img-wrap {
           height: 73px;
+          width: 100%;
           margin: {
             top: 73px;
           }
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          //display: flex;
+          //align-items: center;
+          //justify-content: center;
         }
 
         h2 {
           font-family: 'Bebas Neue Regular', sans-serif;
           font-size: 36px;
+          letter-spacing: 0.1em;
           color: #fff;
           margin: {
             top: 10px;
@@ -46,25 +68,25 @@
 
   .group-1 {
     .tile:nth-child(1) {
-      background-image: url("../img/sports-group-types/bg.png");
+      background-image: url("../img/sports-group-types/bg-light.png");
     }
     .tile:nth-child(2) {
-      background-image: url("../img/sports-group-types/bg.png");
+      background-image: url("../img/sports-group-types/bg-light.png");
     }
     .tile:nth-child(3) {
-      background-image: url("../img/sports-group-types/bg.png");
+      background-image: url("../img/sports-group-types/bg-light.png");
     }
   }
 
   .group-2 {
     .tile:nth-child(1) {
-      background-image: url("../img/sports-group-types/bg.png");
+      background-image: url("../img/sports-group-types/bg-light.png");
     }
     .tile:nth-child(2) {
-      background-image: url("../img/sports-group-types/bg.png");
+      background-image: url("../img/sports-group-types/bg-light.png");
     }
     .tile:nth-child(3) {
-      background-image: url("../img/sports-group-types/bg.png");
+      background-image: url("../img/sports-group-types/bg-light.png");
     }
   }
 }

@@ -1,12 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,latin-ext');
-@import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
+//@import url('http://allfont.ru/allfont.css?fonts=bebas-neue');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700&subset=cyrillic,cyrillic-ext,latin-ext');
 
 @font-face {
   font-family: HelveticaNeueCyr Roman;
   src: url(../fonts/helveticaneue-roman-webfont-webfont.ttf);
 }
+
+@font-face {
+  font-family: 'Bebas Neue Bold';
+  src: url('../fonts/bebas/BebasNeueBold.eot');
+  src: url('../fonts/bebas/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebas/BebasNeueBold.woff') format('woff'),
+  url('../fonts/bebas/BebasNeueBold.ttf') format('truetype');
+  /*font-weight: normal;
+  font-style: normal;*/
+}
+
+@font-face {
+  font-family: 'Bebas Neue Regular';
+  src: url('../fonts/bebas/BebasNeueRegular.eot');
+  src: url('../fonts/bebas/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebas/BebasNeueRegular.woff') format('woff'),
+  url('../fonts/bebas/BebasNeueRegular.ttf') format('truetype');
+  /*font-weight: normal;
+  font-style: normal;*/
+}
+
+@font-face {
+  font-family: 'Bebas Neue Light';
+  src: url('../fonts/bebas/BebasNeueLight.eot');
+  src: url('../fonts/bebas/BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebas/BebasNeueLight.woff') format('woff'),
+  url('../fonts/bebas/BebasNeueLight.ttf') format('truetype');
+  /*font-weight: normal;
+  font-style: normal;*/
+}
+
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url('../fonts/bebas/BebasNeueBook.eot');
+  src: url('../fonts/bebas/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebas/BebasNeueBook.woff') format('woff'),
+  url('../fonts/bebas/BebasNeueBook.ttf') format('truetype');
+  /*font-weight: normal;
+  font-style: normal;*/
+}
+
+@font-face {
+  font-family: 'Bebas Neue Thin';
+  src: url('../fonts/bebas/BebasNeue-Thin.eot');
+  src: url('../fonts/bebas/BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebas/BebasNeue-Thin.woff') format('woff'),
+  url('../fonts/bebas/BebasNeue-Thin.ttf') format('truetype');
+  /*font-weight: normal;
+  font-style: normal;*/
+}
+
 
 h3 {
   font-family: 'Bebas Neue Regular', sans-serif;
@@ -845,15 +896,15 @@ h3 {
     background-color: #595959;
 
     border: {
-      left: 1px solid #ededed;
-      right: 1px solid #ededed;
+      /*left: 1px solid #ededed;
+      right: 1px solid #ededed;*/
       bottom: 1px solid #ededed;
     }
 
     padding: {
       top: 10px;
       bottom: 25px;
-      left: 10px;
+      left: 20px;
       right: 10px;
     }
 
@@ -1320,7 +1371,7 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: #62a1da;
-    opacity: .3;
+    opacity: .4;
     z-index: 1;
     box-shadow: 0 0 45px #62a1da;
     border: 2px solid #64a1d0;
@@ -1538,6 +1589,7 @@ h3 {
         .submenu {
           display: block;
           position: absolute;
+          z-index: 4;
           top: 57px;
           left: 0;
           width: 186px;

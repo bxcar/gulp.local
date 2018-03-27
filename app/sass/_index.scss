@@ -304,6 +304,7 @@ body {
               font-family: 'Bebas Neue Regular', sans-serif;
               font-weight: bold;
               font-size: 130px;
+              line-height: 130px;
               color: #bb1241;
             }
 
@@ -817,6 +818,7 @@ body {
           background-size: cover;
           background-repeat: no-repeat;
           position: relative;
+          text-decoration: none;
 
           .abs-bg-blue-common {
             display: none;
