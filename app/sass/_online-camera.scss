@@ -16,7 +16,20 @@
       background-repeat: no-repeat;
       background-size: cover;
       text-decoration: none;
+      position: relative;
+
+      .abs-bg-blue-common {
+        display: none;
+      }
+
+      &:hover {
+        .abs-bg-blue-common {
+          display: block;
+        }
+      }
     }
+
+
   }
 
   .group-1 {

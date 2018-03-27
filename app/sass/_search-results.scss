@@ -28,7 +28,12 @@
         font-size: 16px;
         line-height: 25px;
         color: #62a1da;
+
+        &:hover {
+          color: #bb1241;
+        }
       }
+
 
       p {
         font-family: 'Open Sans', sans-serif;
