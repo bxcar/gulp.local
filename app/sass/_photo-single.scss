@@ -51,12 +51,24 @@
     }
 
     .flex-wrap {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       margin: {
         top: 8px;
+      }
+
+      &.owl-thumbs {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .owl-thumb-item {
+          cursor: pointer;
+        }
+      }
+
+      .wrapper {
+        width: 180px;
+        height: 146px;
       }
     }
   }
