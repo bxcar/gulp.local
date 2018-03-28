@@ -1,13 +1,14 @@
-var modal = $(".modal-common");
-var trigger = $(".trigger");
-var closeButton = $(".close-button");
-
-trigger.click(function(event) {
+$(".trigger").click(function(event) {
     event.preventDefault();
-    modal.toggleClass("show-modal");
+    $(".modal-common").toggleClass("show-modal");
 });
 
-closeButton.click(function(event) {
+$("#simple-form").submit(function(event) {
     event.preventDefault();
-    modal.toggleClass("show-modal");
+    $(".modal-common.thanks").toggleClass("show-modal");
+});
+
+$(".close-button").click(function(event) {
+    event.preventDefault();
+    $(".modal-common").toggleClass("show-modal");
 });

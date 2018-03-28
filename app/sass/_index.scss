@@ -225,9 +225,10 @@ body {
           display: block;
         }
 
-        div {
+        div, a {
           width: 100%;
           text-align: center;
+          text-decoration: none;
         }
       }
     }
@@ -453,16 +454,6 @@ body {
           height: 404px;
           width: 263px;
 
-          .abs-bg-blue-common {
-            display: none;
-          }
-
-          &:hover {
-            .abs-bg-blue-common {
-              display: block;
-            }
-          }
-
           .news-date {
             height: 313px;
             position: relative;
@@ -503,6 +494,16 @@ body {
           }
 
           .news-tile {
+            .abs-bg-blue-common {
+              display: none;
+            }
+
+            &:hover {
+              .abs-bg-blue-common {
+                display: block;
+              }
+            }
+
             height: 100%;
 
             div.desc {
@@ -700,13 +701,15 @@ body {
             background-image: url('../img/all-to-skiing.png');
             background-size: cover;
 
-            .abs-bg-blue-common {
-              display: none;
-            }
-
-            &:hover {
+            div {
               .abs-bg-blue-common {
-                display: block;
+                display: none;
+              }
+
+              &:hover {
+                .abs-bg-blue-common {
+                  display: block;
+                }
               }
             }
 
@@ -1200,9 +1203,10 @@ body {
           display: block;
         }
 
-        div {
+        div, a {
           width: 100%;
           text-align: center;
+          text-decoration: none;
         }
       }
 

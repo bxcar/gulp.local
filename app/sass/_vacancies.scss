@@ -14,6 +14,18 @@
       padding: {
         right: 50px;
       }
+
+      .single-button-common {
+        margin: {
+          bottom: 0;
+        }
+
+        a {
+          margin: {
+            top: 0;
+          }
+        }
+      }
     }
   }
 
@@ -23,6 +35,7 @@
     margin-bottom: 40px;
 
     a {
+      margin-top: 40px;
       padding: 15px 60px;
     }
   }
