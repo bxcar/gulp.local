@@ -1997,6 +1997,20 @@ h3 {
   visibility: hidden;
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 2;
+
+  &.video {
+    .modal-content {
+      width: 560px;
+      height: 315px;
+
+      .close-button {
+        position: absolute;
+        right: -40px;
+        top: 0;
+      }
+    }
+  }
 
   .modal-content {
     position: absolute;

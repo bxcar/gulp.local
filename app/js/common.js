@@ -1,7 +1,22 @@
 $(document).ready(function () {
-    $(".trigger").click(function (event) {
+    /*$(".trigger").click(function (event) {
         event.preventDefault();
         $(".modal-common").toggleClass("show-modal");
+    });*/
+
+    $(".trigger-video-1").click(function (event) {
+        event.preventDefault();
+        $(".modal-common.video1").toggleClass("show-modal");
+    });
+
+    $(".trigger-video-2").click(function (event) {
+        event.preventDefault();
+        $(".modal-common.video2").toggleClass("show-modal");
+    });
+
+    $(".trigger-video-3").click(function (event) {
+        event.preventDefault();
+        $(".modal-common.video3").toggleClass("show-modal");
     });
 
     $("#simple-form").submit(function (event) {
@@ -9,9 +24,17 @@ $(document).ready(function () {
         $(".modal-common.thanks").toggleClass("show-modal");
     });
 
-    $(".close-button").click(function (event) {
+    $(".close-button1").click(function (event) {
         event.preventDefault();
-        $(".modal-common").toggleClass("show-modal");
+        $(".modal-common.video1").toggleClass("show-modal");
+    });
+    $(".close-button2").click(function (event) {
+        event.preventDefault();
+        $(".modal-common.video2").toggleClass("show-modal");
+    });
+    $(".close-button3").click(function (event) {
+        event.preventDefault();
+        $(".modal-common.video3").toggleClass("show-modal");
     });
 
     $("#owl-6").owlCarousel({
