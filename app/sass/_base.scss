@@ -782,7 +782,7 @@ h3 {
     text-decoration: none;
   }
 
-  .active {
+  a:hover, .active {
     background-color: #62a1da;
     border-radius: 2px;
     color: #fff;
@@ -1799,8 +1799,21 @@ h3 {
 
   .news-wrap {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 25px;
+
+    .news-tile-common {
+      margin: {
+        right: 17px;
+      }
+
+      &:last-child {
+        margin: {
+          right: 0;
+        }
+      }
+    }
   }
 
   & > .single-button-common {

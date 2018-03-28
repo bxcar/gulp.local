@@ -5,8 +5,21 @@
 
   .news-wrap {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 25px;
+
+    .news-tile-common {
+      margin: {
+        right: 17px;
+      }
+
+      &:last-child {
+        margin: {
+          right: 0;
+        }
+      }
+    }
   }
 
   &>.single-button-common {
